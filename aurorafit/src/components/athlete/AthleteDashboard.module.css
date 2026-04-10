@@ -1,0 +1,247 @@
+.page {
+  @apply min-h-screen bg-gradient-to-b from-black via-slate-950 to-slate-900 text-slate-100;
+}
+
+.layout {
+  @apply min-h-screen flex flex-col;
+}
+
+.topbar {
+  @apply sticky top-0 z-20 border-b border-white/10 bg-slate-950/60 backdrop-blur;
+}
+
+.topbarInner {
+  @apply flex items-center justify-between gap-3 px-4 py-3;
+}
+
+.brand {
+  @apply flex items-center gap-3;
+}
+
+.brandText {
+  @apply leading-tight;
+}
+
+.hamburger {
+  @apply inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-slate-100 transition hover:bg-white/10;
+}
+
+.drawerOverlay {
+  @apply fixed inset-0 z-30 bg-black/60;
+}
+
+.drawer {
+  @apply fixed left-0 top-0 z-40 h-full w-72 border-r border-white/10 bg-slate-950/90 backdrop-blur;
+  transform: translateX(-100%);
+  transition: transform 200ms ease;
+}
+
+.drawerOpen {
+  transform: translateX(0);
+}
+
+.drawerHeader {
+  @apply flex items-center justify-between px-4 py-4 border-b border-white/10;
+}
+
+.closeBtn {
+  @apply inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-slate-100 transition hover:bg-white/10;
+}
+
+.sidebarInner {
+  @apply px-4 py-6;
+}
+
+.nav {
+  @apply space-y-2;
+}
+
+.navItem {
+  @apply flex items-center justify-between rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-slate-100 transition hover:bg-white/10;
+}
+
+.navItemActive {
+  @apply border-cyan-400/30 bg-white/10;
+}
+
+.main {
+  @apply flex-1 w-full;
+}
+
+.mainInner {
+  @apply mx-auto max-w-5xl px-4 py-8;
+}
+
+.header {
+  @apply flex items-start justify-between gap-6;
+}
+
+.welcome {
+  @apply text-2xl font-semibold tracking-tight;
+}
+
+.muted {
+  @apply mt-2 text-sm text-slate-300;
+}
+
+.statsGrid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .statsGrid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.statCard {
+  @apply rounded-2xl border border-white/10 bg-white/5 p-4 shadow-lg shadow-black/20;
+}
+
+.statValue {
+  @apply text-xl font-semibold text-cyan-200;
+}
+
+.statLabel {
+  @apply mt-1 text-[11px] uppercase tracking-wide text-slate-400;
+}
+
+.contentGrid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+  margin-top: 1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .contentGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.panel {
+  @apply rounded-2xl border border-white/10 bg-white/5 p-6 shadow-xl shadow-black/20;
+  min-height: 260px;
+}
+
+.panelTitle {
+  @apply text-sm font-semibold tracking-wide text-slate-200;
+}
+
+.empty {
+  @apply mt-10 text-center text-sm text-slate-400;
+}
+
+.label {
+  @apply mt-4 block text-sm font-medium text-slate-200;
+}
+
+.chipRow {
+  @apply mt-3 flex flex-wrap gap-2;
+}
+
+.chip {
+  @apply rounded-full border border-white/10 bg-white/5 px-3 py-2 text-sm text-slate-100 transition hover:bg-white/10;
+}
+
+.chipActive {
+  @apply border-cyan-400/30 bg-cyan-400/10 text-cyan-100;
+}
+
+.textareaSmall {
+  @apply mt-3 w-full min-h-[90px] rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-slate-100 placeholder:text-slate-400 outline-none transition;
+  @apply focus:border-cyan-400/40 focus:bg-white/10 focus:ring-4 focus:ring-cyan-500/20;
+}
+
+.row {
+  @apply mt-4 flex flex-wrap gap-3;
+}
+
+.primary {
+  @apply inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-cyan-400 to-indigo-500 px-4 py-3 font-semibold text-slate-950 shadow-lg shadow-cyan-500/20 transition;
+  @apply hover:from-cyan-300 hover:to-indigo-400;
+  @apply focus:outline-none focus:ring-4 focus:ring-cyan-500/30;
+  @apply disabled:opacity-60 disabled:cursor-not-allowed;
+}
+
+.secondary {
+  @apply inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-4 py-3 font-semibold text-slate-100 transition hover:bg-white/10;
+}
+
+.pill {
+  @apply inline-flex rounded-full border border-white/10 bg-white/5 px-2 py-1 text-xs text-slate-200;
+}
+
+.error {
+  @apply mt-4 rounded-lg border border-red-500/30 bg-red-500/10 px-3 py-2 text-sm text-red-200;
+}
+
+.success {
+  @apply mt-4 rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-3 py-2 text-sm text-emerald-200;
+}
+
+.inviteList {
+  @apply mt-4 space-y-2;
+}
+
+.inviteItem {
+  @apply flex items-center justify-between gap-3 rounded-xl border border-white/10 bg-black/20 px-4 py-3;
+}
+
+.inviteLeft {
+  @apply min-w-0;
+}
+
+.inviteTitle {
+  @apply truncate text-sm font-semibold text-slate-100;
+}
+
+.inviteSub {
+  @apply mt-1 truncate text-xs text-slate-400;
+}
+
+.smallBtn {
+  @apply inline-flex items-center justify-center rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-xs font-semibold text-slate-100 transition hover:bg-white/10;
+}
+
+.smallBtnPrimary {
+  @apply border-cyan-400/30 bg-cyan-400/10 text-cyan-100 hover:bg-cyan-400/15;
+}
+
+.smallBtnDanger {
+  @apply border-red-500/30 bg-red-500/10 text-red-100 hover:bg-red-500/15;
+}
+
+.modalOverlay {
+  @apply fixed inset-0 z-40 bg-black/70;
+}
+
+.modal {
+  @apply fixed left-1/2 top-1/2 z-50 w-[92vw] max-w-lg -translate-x-1/2 -translate-y-1/2 rounded-2xl border border-white/10 bg-slate-950/90 p-6 backdrop-blur shadow-2xl shadow-black/40;
+}
+
+.modalTitle {
+  @apply text-lg font-semibold tracking-tight text-slate-100;
+}
+
+.modalMuted {
+  @apply mt-2 text-sm text-slate-300;
+}
+
+.modalRow {
+  @apply mt-4 grid gap-3 sm:grid-cols-2;
+}
+
+.optionBtn {
+  @apply w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-left text-sm text-slate-100 transition hover:bg-white/10;
+}
+
+.optionBtnActive {
+  @apply border-cyan-400/30 bg-cyan-400/10 text-cyan-100;
+}
+
+.modalActions {
+  @apply mt-6 flex flex-wrap justify-end gap-3;
+}

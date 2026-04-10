@@ -1,0 +1,191 @@
+.page {
+  @apply min-h-screen bg-gradient-to-b from-black via-slate-950 to-slate-900 text-slate-100;
+}
+
+.layout {
+  @apply min-h-screen flex flex-col;
+}
+
+.topbar {
+  @apply sticky top-0 z-20 border-b border-white/10 bg-slate-950/60 backdrop-blur;
+}
+
+.topbarInner {
+  @apply flex items-center justify-between gap-3 px-4 py-3;
+}
+
+.brand {
+  @apply flex items-center gap-3;
+}
+
+.brandText {
+  @apply leading-tight;
+}
+
+.hamburger {
+  @apply inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-slate-100 transition hover:bg-white/10;
+}
+
+.drawerOverlay {
+  @apply fixed inset-0 z-30 bg-black/60;
+}
+
+.drawer {
+  @apply fixed left-0 top-0 z-40 h-full w-72 border-r border-white/10 bg-slate-950/90 backdrop-blur;
+  transform: translateX(-100%);
+  transition: transform 200ms ease;
+}
+
+.drawerOpen {
+  transform: translateX(0);
+}
+
+.drawerHeader {
+  @apply flex items-center justify-between px-4 py-4 border-b border-white/10;
+}
+
+.closeBtn {
+  @apply inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-slate-100 transition hover:bg-white/10;
+}
+
+.sidebarInner {
+  @apply px-4 py-6;
+}
+
+.nav {
+  @apply space-y-2;
+}
+
+.navItem {
+  @apply flex items-center justify-between rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-slate-100 transition hover:bg-white/10;
+}
+
+.navItemActive {
+  @apply border-cyan-400/30 bg-white/10;
+}
+
+.pill {
+  @apply inline-flex rounded-full border border-white/10 bg-white/5 px-2 py-1 text-xs text-slate-200;
+}
+
+.main {
+  @apply flex-1 w-full;
+}
+
+.mainInner {
+  @apply mx-auto max-w-5xl px-4 py-8;
+}
+
+.panel {
+  @apply rounded-2xl border border-white/10 bg-white/5 p-6 shadow-xl shadow-black/20;
+}
+
+.contentGrid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 1024px) {
+  .contentGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.label {
+  @apply block text-[11px] font-semibold uppercase tracking-wide text-slate-400;
+}
+
+.input {
+  @apply mt-2 w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-slate-100 placeholder:text-slate-500 outline-none transition;
+  @apply focus:border-cyan-400/40 focus:bg-white/10 focus:ring-4 focus:ring-cyan-500/20;
+}
+
+.error {
+  @apply mt-4 rounded-lg border border-red-500/30 bg-red-500/10 px-3 py-2 text-sm text-red-200;
+}
+
+.success {
+  @apply mt-4 rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-3 py-2 text-sm text-emerald-200;
+}
+
+.list {
+  @apply mt-4 space-y-2;
+}
+
+.listItem {
+  @apply rounded-lg border border-white/10 bg-black/20 px-3 py-2;
+}
+
+.listItemTop {
+  @apply flex items-center justify-between gap-2 min-w-0;
+}
+
+.listLeft {
+  @apply min-w-0 flex-1;
+}
+
+.listTitle {
+  @apply truncate text-sm font-semibold text-slate-100 leading-tight;
+}
+
+.listSub {
+  @apply mt-0.5 truncate text-[11px] text-slate-400 leading-snug;
+}
+
+.listActions {
+  @apply flex items-center gap-1 flex-shrink-0;
+}
+
+.iconLink {
+  @apply inline-flex items-center justify-center rounded-lg bg-gradient-to-r from-cyan-400 to-indigo-500 p-2 text-slate-950 shadow-md shadow-cyan-500/15 transition;
+  @apply hover:from-cyan-300 hover:to-indigo-400 focus:outline-none focus:ring-2 focus:ring-cyan-500/40;
+}
+
+.iconLinkMuted {
+  @apply inline-flex items-center justify-center rounded-lg border border-white/15 bg-white/10 p-2 text-slate-100 shadow-sm transition;
+  @apply hover:bg-white/15 focus:outline-none focus:ring-2 focus:ring-white/25;
+}
+
+.iconBtnDanger {
+  @apply inline-flex items-center justify-center rounded-lg border border-red-500/45 bg-red-500/10 p-2 text-red-200 transition;
+  @apply hover:bg-red-500/20 focus:outline-none focus:ring-2 focus:ring-red-500/30;
+  @apply disabled:opacity-50 disabled:cursor-not-allowed disabled:pointer-events-none;
+}
+
+.linkNewCompact {
+  @apply inline-flex items-center justify-center rounded-lg border border-white/15 bg-white/5 px-2.5 py-1.5 text-[11px] font-semibold text-slate-200 transition hover:bg-white/10;
+  @apply focus:outline-none focus:ring-2 focus:ring-white/20 whitespace-nowrap;
+}
+
+.title {
+  @apply text-2xl font-semibold tracking-tight;
+}
+
+.muted {
+  @apply mt-2 text-sm text-slate-300;
+}
+
+.row {
+  @apply mt-5 flex flex-wrap gap-3;
+}
+
+.primary {
+  @apply inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-cyan-400 to-indigo-500 px-4 py-3 font-semibold text-slate-950 shadow-lg shadow-cyan-500/20 transition;
+  @apply hover:from-cyan-300 hover:to-indigo-400;
+  @apply focus:outline-none focus:ring-4 focus:ring-cyan-500/30;
+}
+
+.secondary {
+  @apply inline-flex items-center justify-center rounded-xl border border-white/10 bg-white/5 px-4 py-3 font-semibold text-slate-100 transition hover:bg-white/10;
+}
+
+.danger {
+  @apply inline-flex items-center justify-center rounded-xl border border-red-500/40 bg-red-500/10 px-4 py-3 font-semibold text-red-200 transition hover:bg-red-500/20;
+  @apply disabled:opacity-60 disabled:cursor-not-allowed;
+}
+
+.empty {
+  @apply mt-8 rounded-2xl border border-white/10 bg-white/5 p-6 text-sm text-slate-300;
+}
+

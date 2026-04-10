@@ -1,0 +1,109 @@
+.page {
+  @apply min-h-screen bg-gradient-to-b from-slate-950 to-slate-900 text-slate-100;
+}
+
+.topbar {
+  @apply sticky top-0 z-10 border-b border-white/10 bg-slate-950/70 backdrop-blur;
+}
+
+.topbarInner {
+  @apply mx-auto flex max-w-5xl items-center justify-between px-4 py-3;
+}
+
+.brand {
+  @apply flex items-center gap-3;
+}
+
+.logo {
+  @apply h-9 w-9 rounded-xl bg-gradient-to-br from-amber-400 to-rose-500 shadow-lg shadow-amber-500/20;
+}
+
+.title {
+  @apply text-base font-semibold tracking-tight;
+}
+
+.actions {
+  @apply flex items-center gap-3;
+}
+
+.ghost {
+  @apply rounded-xl border border-white/10 bg-white/5 px-3 py-2 text-sm text-slate-100 transition hover:bg-white/10;
+}
+
+.main {
+  @apply mx-auto max-w-5xl px-4 py-8;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.card {
+  @apply rounded-2xl border border-white/10 bg-white/5 p-5 shadow-xl shadow-black/20;
+}
+
+.cardTitle {
+  @apply text-lg font-semibold tracking-tight;
+}
+
+.muted {
+  @apply mt-1 text-sm text-slate-300;
+}
+
+.fieldRow {
+  @apply mt-4 grid gap-3 sm:grid-cols-2;
+}
+
+.label {
+  @apply block text-sm font-medium text-slate-200;
+}
+
+.input {
+  @apply mt-2 w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-slate-100 placeholder:text-slate-400 outline-none transition;
+  @apply focus:border-amber-400/40 focus:bg-white/10 focus:ring-4 focus:ring-amber-500/20;
+}
+
+.select {
+  @apply mt-2 w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-slate-100 outline-none transition;
+  @apply focus:border-amber-400/40 focus:bg-white/10 focus:ring-4 focus:ring-amber-500/20;
+}
+
+.button {
+  @apply mt-4 inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-amber-400 to-rose-500 px-4 py-3 font-semibold text-slate-950 shadow-lg shadow-amber-500/20 transition;
+  @apply hover:from-amber-300 hover:to-rose-400;
+  @apply focus:outline-none focus:ring-4 focus:ring-amber-500/30;
+  @apply disabled:opacity-60 disabled:cursor-not-allowed;
+}
+
+.error {
+  @apply mt-3 rounded-lg border border-red-500/30 bg-red-500/10 px-3 py-2 text-sm text-red-200;
+}
+
+.success {
+  @apply mt-3 rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-3 py-2 text-sm text-emerald-200;
+}
+
+.table {
+  @apply mt-4 w-full overflow-hidden rounded-xl border border-white/10;
+}
+
+.tableHeader {
+  @apply grid grid-cols-12 bg-white/5 px-3 py-2 text-xs font-medium uppercase tracking-wide text-slate-300;
+}
+
+.tableRow {
+  @apply grid grid-cols-12 items-center border-t border-white/10 px-3 py-2 text-sm;
+}
+
+.pill {
+  @apply inline-flex rounded-full border border-white/10 bg-white/5 px-2 py-1 text-xs text-slate-200;
+}
+

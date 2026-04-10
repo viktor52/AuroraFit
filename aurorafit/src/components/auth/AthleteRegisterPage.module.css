@@ -1,0 +1,79 @@
+.page {
+  @apply min-h-screen flex items-center justify-center px-4 py-12 bg-gradient-to-b from-slate-950 via-slate-950 to-slate-900 text-slate-100;
+}
+
+.shell {
+  @apply w-full max-w-md;
+}
+
+.brand {
+  @apply mb-6 text-center;
+}
+
+.logoMark {
+  @apply mx-auto mb-3 h-12 w-12 rounded-2xl bg-gradient-to-br from-cyan-400 to-indigo-500 shadow-lg shadow-cyan-500/20;
+}
+
+.title {
+  @apply text-3xl font-semibold tracking-tight;
+}
+
+.subtitle {
+  @apply mt-2 text-sm text-slate-300;
+}
+
+.card {
+  @apply rounded-2xl border border-white/10 bg-white/5 backdrop-blur px-6 py-6 shadow-xl shadow-black/30;
+}
+
+.fieldGroup {
+  @apply space-y-4;
+}
+
+.labelRow {
+  @apply flex items-center justify-between;
+}
+
+.label {
+  @apply block text-sm font-medium text-slate-200;
+}
+
+.helperLink {
+  @apply text-sm text-cyan-300 hover:text-cyan-200 underline-offset-4 hover:underline;
+}
+
+.input {
+  @apply mt-2 w-full rounded-xl border border-white/10 bg-white/5 px-4 py-3 text-slate-100 placeholder:text-slate-400 outline-none ring-0 transition;
+  @apply focus:border-cyan-400/40 focus:bg-white/10 focus:outline-none focus:ring-4 focus:ring-cyan-500/20;
+}
+
+.row {
+  @apply flex items-center justify-between pt-2;
+}
+
+.submit {
+  @apply mt-5 w-full rounded-xl bg-gradient-to-r from-cyan-400 to-indigo-500 px-4 py-3 font-semibold text-slate-950 shadow-lg shadow-cyan-500/20 transition;
+  @apply hover:from-cyan-300 hover:to-indigo-400;
+  @apply focus:outline-none focus:ring-4 focus:ring-cyan-500/30;
+  @apply disabled:opacity-60 disabled:cursor-not-allowed;
+}
+
+.error {
+  @apply mt-3 rounded-lg border border-red-500/30 bg-red-500/10 px-3 py-2 text-sm text-red-200;
+}
+
+.success {
+  @apply mt-3 rounded-lg border border-emerald-500/30 bg-emerald-500/10 px-3 py-2 text-sm text-emerald-200;
+}
+
+.finePrint {
+  @apply mt-5 text-center text-xs text-slate-400;
+}
+
+.finePrint a {
+  @apply text-slate-200 underline-offset-4 hover:underline;
+}
+
+.hint {
+  @apply mt-1 text-xs text-slate-400;
+}

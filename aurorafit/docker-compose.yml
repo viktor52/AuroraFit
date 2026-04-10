@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16
+    container_name: aurorafit-db
+    environment:
+      POSTGRES_DB: aurorafit
+      POSTGRES_USER: aurorafit
+      POSTGRES_PASSWORD: aurorafit_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - aurorafit_pgdata:/var/lib/postgresql/data
+
+volumes:
+  aurorafit_pgdata:
+

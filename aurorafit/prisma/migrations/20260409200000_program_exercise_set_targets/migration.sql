@@ -1,0 +1,1 @@
+ALTER TABLE "ProgramExercise" ADD COLUMN IF NOT EXISTS "setTargets" JSONB;

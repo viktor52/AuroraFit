@@ -1,0 +1,244 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Role {
+  ATHLETE
+  COACH
+  ADMIN
+}
+
+enum CoachAthleteInviteStatus {
+  PENDING
+  ACCEPTED
+  DECLINED
+}
+
+model User {
+  id           String   @id @default(uuid())
+  email        String   @unique
+  passwordHash String
+  role         Role     @default(ATHLETE)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  athleteProfile       AthleteProfile?
+  coachProfile         CoachProfile?
+  coachInvitesCreated  CoachInviteKey[] @relation("CoachInviteCreatedBy")
+  coachAthleteInvitesSent CoachAthleteInvite[] @relation("CoachInvitesSent")
+  coachAthleteInvitesReceived CoachAthleteInvite[] @relation("CoachInvitesReceived")
+  coachAthletes        CoachAthlete[]   @relation("CoachOnAthletes")
+  athleteCoaches       CoachAthlete[]   @relation("AthleteOnCoaches")
+  athleteAssignments   AthleteProgramAssignment[]
+  sessions            Session[]
+  programRequests      ProgramRequest[]
+  exercisesCreated    Exercise[]       @relation("CoachCreatedExercise")
+  programsCreated     Program[]        @relation("CoachCreatedProgram")
+  coachExerciseSaved  CoachExerciseSaved[]
+
+  @@index([role])
+}
+
+/// One-time key issued by an admin so a coach can register.
+model CoachInviteKey {
+  id              String    @id @default(uuid())
+  keyDigest       String    @unique
+  createdAt       DateTime  @default(now())
+  expiresAt       DateTime?
+  usedAt          DateTime?
+  createdByUserId String?
+  createdBy       User?     @relation("CoachInviteCreatedBy", fields: [createdByUserId], references: [id], onDelete: SetNull)
+}
+
+model AthleteProfile {
+  userId    String @id
+  user      User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  fullName  String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model CoachProfile {
+  userId    String @id
+  user      User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+  fullName  String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+/// Coach ↔ Athlete relationship (who can assign programs).
+model CoachAthlete {
+  coachId   String
+  athleteId String
+  createdAt DateTime @default(now())
+
+  coach     User   @relation("CoachOnAthletes", fields: [coachId], references: [id], onDelete: Cascade)
+  athlete   User   @relation("AthleteOnCoaches", fields: [athleteId], references: [id], onDelete: Cascade)
+
+  @@id([coachId, athleteId])
+  @@index([athleteId])
+}
+
+/// Coach → Athlete invite that the athlete can accept/decline.
+model CoachAthleteInvite {
+  id        String                  @id @default(uuid())
+  coachId   String
+  athleteId String
+  status    CoachAthleteInviteStatus @default(PENDING)
+  createdAt DateTime                @default(now())
+  respondedAt DateTime?
+
+  coach     User @relation("CoachInvitesSent", fields: [coachId], references: [id], onDelete: Cascade)
+  athlete   User @relation("CoachInvitesReceived", fields: [athleteId], references: [id], onDelete: Cascade)
+
+  @@index([coachId])
+  @@index([athleteId])
+  @@index([status])
+  @@unique([coachId, athleteId, status])
+}
+
+model Exercise {
+  id          String   @id @default(uuid())
+  name        String
+  description String?
+  /// Parsed from coach-provided YouTube URL; used for athlete embeds.
+  youtubeVideoId String?
+  createdByCoachId String?
+  createdByCoach   User?    @relation("CoachCreatedExercise", fields: [createdByCoachId], references: [id], onDelete: SetNull)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  programLinks ProgramExercise[]
+  coachSaves   CoachExerciseSaved[]
+
+  @@unique([name])
+  @@index([createdByCoachId])
+}
+
+/// Coach bookmarked an exercise (e.g. from API search) without using it in a program yet.
+model CoachExerciseSaved {
+  id         String   @id @default(uuid())
+  coachId    String
+  exerciseId String
+  createdAt  DateTime @default(now())
+
+  coach    User     @relation(fields: [coachId], references: [id], onDelete: Cascade)
+  exercise Exercise @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
+
+  @@unique([coachId, exerciseId])
+  @@index([coachId])
+}
+
+model Program {
+  id          String   @id @default(uuid())
+  name        String
+  description String?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  /// Coach who created this program (library or published to athlete).
+  createdByCoachId String?
+  createdByCoach   User?    @relation("CoachCreatedProgram", fields: [createdByCoachId], references: [id], onDelete: SetNull)
+  /// Template schedule when stored in coach library (not on AthleteProgramAssignment).
+  libraryDaysPerWeek Int?
+  librarySplitPattern String?
+  libraryCustomTrainingDays String?
+  libraryWeeks Int?
+
+  exercises   ProgramExercise[]
+  assignments AthleteProgramAssignment[]
+
+  @@unique([name])
+  @@index([createdByCoachId])
+}
+
+model ProgramExercise {
+  id         String   @id @default(uuid())
+  programId  String
+  exerciseId String
+  /// Null = same content every program week (legacy AI / older programs). 1..N = that program week only.
+  weekNumber Int?
+  sortOrder  Int      @default(0)
+  /// Which training-day slot (0..daysPerWeek-1) this exercise belongs to. Null = legacy pool (AI / old coach adds).
+  templateDayIndex Int?
+  sets       Int?
+  reps       Int?
+  percent1RM Int?
+  /// Per-set reps / %1RM when coach uses multi-line prescriptions (JSON array).
+  setTargets Json?
+  notes      String?
+  /// When true, later program weeks show this exercise with +5% 1RM and −2 reps per week from this row’s week (until overridden by an explicit row for the same exercise + day).
+  progressiveOverload Boolean @default(false)
+
+  program    Program  @relation(fields: [programId], references: [id], onDelete: Cascade)
+  exercise   Exercise @relation(fields: [exerciseId], references: [id], onDelete: Cascade)
+
+  @@index([programId, weekNumber])
+  @@index([programId])
+  @@index([exerciseId])
+}
+
+model AthleteProgramAssignment {
+  id         String   @id @default(uuid())
+  athleteId  String
+  programId  String
+  assignedBy String?
+  daysPerWeek Int     @default(3)
+  splitPattern String @default("spread")
+  /// When splitPattern is "custom", JSON array of weekday indices 0–6 (Mon–Sun), length = daysPerWeek.
+  customTrainingDays String?
+  weeks      Int      @default(4)
+  startsOn   DateTime?
+  endsOn     DateTime?
+  createdAt  DateTime @default(now())
+
+  athlete    User     @relation(fields: [athleteId], references: [id], onDelete: Cascade)
+  program    Program  @relation(fields: [programId], references: [id], onDelete: Cascade)
+
+  @@index([athleteId])
+  @@index([programId])
+}
+
+model Session {
+  id          String   @id @default(uuid())
+  tokenDigest String   @unique
+  userId      String
+  expiresAt   DateTime
+  createdAt   DateTime @default(now())
+
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+enum ProgramRequestType {
+  COACH
+  AI
+}
+
+enum ProgramRequestStatus {
+  PENDING
+  COMPLETED
+  REJECTED
+}
+
+model ProgramRequest {
+  id        String               @id @default(uuid())
+  athleteId String
+  type      ProgramRequestType
+  status    ProgramRequestStatus @default(PENDING)
+  goals     String
+  createdAt DateTime             @default(now())
+  updatedAt DateTime             @updatedAt
+
+  athlete   User                 @relation(fields: [athleteId], references: [id], onDelete: Cascade)
+
+  @@index([athleteId])
+  @@index([status])
+}
