@@ -242,3 +242,20 @@ model ProgramRequest {
   @@index([athleteId])
   @@index([status])
 }
+
+/// Life Fitness product catalog (seed from `data/life_fitness.json` via `npm run db:seed-life-fitness`).
+model LifeFitnessMachine {
+  id              String   @id @default(uuid())
+  name            String
+  brand           String
+  series          String?
+  purpose         String   @db.Text
+  muscleGroups    String[]
+  modelNumbers    String[]
+  difficultyLevel String?
+  movementType    String?
+  /// Lowercase concatenation for multi-field substring search.
+  searchText      String   @db.Text
+
+  @@index([name])
+}

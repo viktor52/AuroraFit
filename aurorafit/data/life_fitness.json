@@ -1,0 +1,1719 @@
+{
+  "catalog": "Life Fitness Product Catalog 2026",
+  "machines": [
+
+    {
+      "name": "Symbio Runner",
+      "brand": "Life Fitness",
+      "series": "Symbio",
+      "purpose": "Premium treadmill for immersive running workouts with advanced biomechanics, adaptive deck technology, and real-time gait analysis coaching.",
+      "muscle_groups": ["Full Body", "Quadriceps", "Hamstrings", "Glutes", "Calves", "Core"],
+      "model_numbers": ["EVT", "SYT"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Cardio / Locomotion"
+    },
+    {
+      "name": "Symbio Incline Elliptical",
+      "brand": "Life Fitness",
+      "series": "Symbio",
+      "purpose": "Premium incline elliptical delivering a natural running arc motion with adjustable incline and interactive muscle targeting for a personalized cardio experience.",
+      "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes", "Calves", "Hip Flexors", "Core"],
+      "model_numbers": ["EVXI", "SYX"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Cardio / Push-Pull (Elliptical)"
+    },
+    {
+      "name": "Symbio SwitchCycle",
+      "brand": "Life Fitness",
+      "series": "Symbio",
+      "purpose": "2-in-1 upright and indoor cycling hybrid with 100 resistance levels, virtual terrains, and on-demand content; functions as both a traditional upright bike and a performance indoor cycle.",
+      "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes", "Calves", "Core"],
+      "model_numbers": ["EVCH", "SYH"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Cardio / Cyclical"
+    },
+    {
+      "name": "Symbio Recumbent Cycle",
+      "brand": "Life Fitness",
+      "series": "Symbio",
+      "purpose": "Premium recumbent cycle with ultra-low step-through design, 25 resistance levels, and on-demand content for comfortable and engaging cycling for all body types.",
+      "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes", "Calves"],
+      "model_numbers": ["EVR", "SYR"],
+      "difficulty_level": "Beginner to Intermediate",
+      "movement_type": "Cardio / Cyclical"
+    },
+    {
+      "name": "Integrity+ Treadmill",
+      "brand": "Life Fitness",
+      "series": "Integrity+",
+      "purpose": "Durable, reliable treadmill featuring Flex Deck Shock Absorption Technology to reduce joint stress, with ergonomic controls and a modern console.",
+      "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes", "Calves", "Core"],
+      "model_numbers": ["INT"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Cardio / Locomotion"
+    },
+    {
+      "name": "Integrity+ Elliptical",
+      "brand": "Life Fitness",
+      "series": "Integrity+",
+      "purpose": "Elliptical trainer with a natural stride developed from years of research and remote resistance controls on multi-grip handles for a comfortable full-body cardio workout.",
+      "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes", "Calves", "Hip Flexors", "Core"],
+      "model_numbers": ["INX"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Cardio / Push-Pull (Elliptical)"
+    },
+    {
+      "name": "Integrity+ Upright Bike",
+      "brand": "Life Fitness",
+      "series": "Integrity+",
+      "purpose": "Upright stationary bike with ergonomic racing handlebars offering a smooth indoor cycling experience and 26 resistance levels.",
+      "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes", "Calves"],
+      "model_numbers": ["INC"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Cardio / Cyclical"
+    },
+    {
+      "name": "Integrity+ Recumbent Bike",
+      "brand": "Life Fitness",
+      "series": "Integrity+",
+      "purpose": "Recumbent bike with step-through design for easy entry/exit and side-handle resistance controls for comfortable low-impact cycling.",
+      "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes", "Calves"],
+      "model_numbers": ["INR"],
+      "difficulty_level": "Beginner to Intermediate",
+      "movement_type": "Cardio / Cyclical"
+    },
+    {
+      "name": "Integrity+ PowerMill Climber",
+      "brand": "Life Fitness",
+      "series": "Integrity+",
+      "purpose": "Motor-driven stair climber with one of the widest speed ranges offering 26 modes, ideal for both beginners and high-intensity cardio workouts.",
+      "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes", "Calves", "Core"],
+      "model_numbers": ["INPM"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Cardio / Climb"
+    },
+    {
+      "name": "Integrity+ Arc Trainer (Total Body)",
+      "brand": "Life Fitness",
+      "series": "Integrity+",
+      "purpose": "3-in-1 total body cardio trainer that allows users to glide, stride, or climb at low, medium, and high inclines for a versatile full-body workout.",
+      "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes", "Calves", "Chest", "Back", "Shoulders", "Core"],
+      "model_numbers": ["INA-T"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Cardio / Push-Pull (Cross-Training)"
+    },
+    {
+      "name": "Integrity+ Arc Trainer (Lower Body)",
+      "brand": "Life Fitness",
+      "series": "Integrity+",
+      "purpose": "3-in-1 lower body focused cardio trainer allowing users to glide, stride, or climb at adjustable inclines for targeted lower body conditioning.",
+      "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes", "Calves", "Hip Flexors"],
+      "model_numbers": ["INA-L"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Cardio / Push (Lower Body)"
+    },
+    {
+      "name": "Aspire Treadmill",
+      "brand": "Life Fitness",
+      "series": "Aspire",
+      "purpose": "Streamlined all-purpose treadmill with a large accessory tray and cross handrail, designed for simplicity and reliability in any facility.",
+      "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes", "Calves", "Core"],
+      "model_numbers": ["ASPT"],
+      "difficulty_level": "Beginner to Intermediate",
+      "movement_type": "Cardio / Locomotion"
+    },
+    {
+      "name": "Aspire Elliptical",
+      "brand": "Life Fitness",
+      "series": "Aspire",
+      "purpose": "Entry-level elliptical with a natural elliptical path that mimics running stride, designed for simplicity and ease of use.",
+      "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes", "Calves", "Hip Flexors"],
+      "model_numbers": ["ASPX"],
+      "difficulty_level": "Beginner to Intermediate",
+      "movement_type": "Cardio / Elliptical"
+    },
+    {
+      "name": "Aspire Upright Bike",
+      "brand": "Life Fitness",
+      "series": "Aspire",
+      "purpose": "Entry-level upright bike with a generator drive system and Poly-V belt resistance, offering quiet, low-maintenance operation.",
+      "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes", "Calves"],
+      "model_numbers": ["ASPC"],
+      "difficulty_level": "Beginner to Intermediate",
+      "movement_type": "Cardio / Cyclical"
+    },
+    {
+      "name": "Aspire Recumbent Bike",
+      "brand": "Life Fitness",
+      "series": "Aspire",
+      "purpose": "Entry-level recumbent bike with backrest, lumbar support, and a wrap-around adjustment lever for maximum comfort during cycling.",
+      "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes", "Calves"],
+      "model_numbers": ["ASPR"],
+      "difficulty_level": "Beginner to Intermediate",
+      "movement_type": "Cardio / Cyclical"
+    },
+
+    {
+      "name": "ICG IC7 Indoor Cycle",
+      "brand": "ICG (Life Fitness)",
+      "series": "ICG Indoor Cycles",
+      "purpose": "Top-of-the-line indoor cycle featuring Coach By Color training zones, WattRate Direct Power Meter (+/-1%), and a two-stage drivetrain for precision performance cycling.",
+      "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes", "Calves", "Core"],
+      "model_numbers": ["IC-LFICGIC7-01"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Cardio / Cyclical"
+    },
+    {
+      "name": "ICG IC6 Indoor Cycle",
+      "brand": "ICG (Life Fitness)",
+      "series": "ICG Indoor Cycles",
+      "purpose": "Mid-level indoor cycle powered by an onboard generator and LiPo rechargeable battery, featuring Sprint Pro handlebars and WattRate Power Meter for group class environments.",
+      "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes", "Calves", "Core"],
+      "model_numbers": ["IC-LFICGIC6-01"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Cardio / Cyclical"
+    },
+    {
+      "name": "ICG IC5 Indoor Cycle",
+      "brand": "ICG (Life Fitness)",
+      "series": "ICG Indoor Cycles",
+      "purpose": "Mid-level indoor cycle with an onboard generator powering an LCD+ console; designed for group class environments with WattRate Power Meter technology.",
+      "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes", "Calves", "Core"],
+      "model_numbers": ["IC-LFICGIC5-01"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Cardio / Cyclical"
+    },
+    {
+      "name": "ICG IC3 Indoor Cycle",
+      "brand": "ICG (Life Fitness)",
+      "series": "ICG Indoor Cycles",
+      "purpose": "Entry-level indoor cycle offering Coach By Color training zones and compatibility with the ICG Training App and Connect System for accessible group cycling.",
+      "muscle_groups": ["Quadriceps", "Hamstrings", "Glutes", "Calves", "Core"],
+      "model_numbers": ["IC-LFICGIC3-01"],
+      "difficulty_level": "Beginner to Intermediate",
+      "movement_type": "Cardio / Cyclical"
+    },
+
+    {
+      "name": "Heat Row",
+      "brand": "Life Fitness",
+      "series": "Heat Rowers",
+      "purpose": "Rowing ergometer with WattRate power measurement display, air and magnetic resistance for a wide range of intensity, and a simplified LCD console for self-guided workouts.",
+      "muscle_groups": ["Back", "Shoulders", "Biceps", "Core", "Quadriceps", "Hamstrings", "Glutes"],
+      "model_numbers": ["PRF-ROW-LCD-01"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Heat Performance Row",
+      "brand": "Life Fitness",
+      "series": "Heat Rowers",
+      "purpose": "Performance rowing ergometer featuring WattRate Direct Power Meter, Coach By Color technology, and air/magnetic resistance for results-based small group and solo training.",
+      "muscle_groups": ["Back", "Shoulders", "Biceps", "Core", "Quadriceps", "Hamstrings", "Glutes"],
+      "model_numbers": ["PRF-ROW-TFT-01"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Pull"
+    },
+
+    {
+      "name": "Insignia Shoulder Press",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Selectorized shoulder press machine with biomechanically optimized overhead pressing motion for safe and effective deltoid development.",
+      "muscle_groups": ["Shoulders (Deltoids)", "Triceps", "Upper Trapezius"],
+      "model_numbers": ["SS-SP"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Insignia Chest Press",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Selectorized chest press machine offering a guided horizontal pressing motion for pectoral strength development.",
+      "muscle_groups": ["Chest (Pectorals)", "Triceps", "Anterior Deltoids"],
+      "model_numbers": ["SS-CP"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Insignia Chest Press Dual Axis",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Innovative dual-axis chest press combining chest press and pectoral fly movements into one exercise; allows user-defined converging paths of motion for maximum pectoral engagement.",
+      "muscle_groups": ["Chest (Pectorals)", "Triceps", "Anterior Deltoids"],
+      "model_numbers": ["SS-CPX"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Insignia Row",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Selectorized seated row machine for developing upper and mid-back pulling strength in a guided, joint-friendly path.",
+      "muscle_groups": ["Latissimus Dorsi", "Rhomboids", "Biceps", "Rear Deltoids"],
+      "model_numbers": ["SS-RW"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Insignia Lateral Raise",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Selectorized lateral raise machine for isolating the medial deltoids to build shoulder width.",
+      "muscle_groups": ["Shoulders (Medial Deltoids)", "Trapezius"],
+      "model_numbers": ["SS-LR"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Insignia Triceps Press",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Selectorized triceps press machine for targeted triceps extension in a seated, guided position.",
+      "muscle_groups": ["Triceps"],
+      "model_numbers": ["SS-TP"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Insignia Triceps Extension",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Selectorized overhead or pushdown triceps extension machine for isolating triceps.",
+      "muscle_groups": ["Triceps"],
+      "model_numbers": ["SS-TE"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Insignia Biceps Curl",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Selectorized bilateral biceps curl machine for isolated elbow flexion and biceps development.",
+      "muscle_groups": ["Biceps", "Brachialis"],
+      "model_numbers": ["SS-BC"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Insignia Biceps Curl Dependent",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Selectorized dependent biceps curl machine designed to allow synchronized bilateral curling motion.",
+      "muscle_groups": ["Biceps", "Brachialis"],
+      "model_numbers": ["SS-BCD"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Insignia Assist Dip Chin",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Assisted dip and chin-up machine using a counterbalanced weight stack to help users perform dips and pull-ups with reduced effective bodyweight.",
+      "muscle_groups": ["Chest", "Triceps", "Latissimus Dorsi", "Biceps"],
+      "model_numbers": ["SS-ADC"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push / Pull"
+    },
+    {
+      "name": "Insignia Pectoral Fly / Rear Delt",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Dual-function selectorized machine combining pectoral fly and rear deltoid movements on a single frame for chest and posterior shoulder training.",
+      "muscle_groups": ["Chest (Pectorals)", "Rear Deltoids", "Rhomboids"],
+      "model_numbers": ["SS-FLY"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push / Pull"
+    },
+    {
+      "name": "Insignia Pulldown",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Selectorized lat pulldown machine for building lat width and upper back strength through guided vertical pulling.",
+      "muscle_groups": ["Latissimus Dorsi", "Biceps", "Rhomboids", "Rear Deltoids"],
+      "model_numbers": ["SS-PD"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Insignia Pulldown Dual Axis",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Dual-axis lat pulldown allowing user-defined pulling paths for varied lat and upper back development.",
+      "muscle_groups": ["Latissimus Dorsi", "Biceps", "Rhomboids"],
+      "model_numbers": ["SS-PDX"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Insignia Leg Extension",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Selectorized leg extension machine for isolating the quadriceps through open-chain knee extension.",
+      "muscle_groups": ["Quadriceps"],
+      "model_numbers": ["SS-LE"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Insignia Seated Leg Curl",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Selectorized seated leg curl machine for isolating the hamstrings through knee flexion in a seated position.",
+      "muscle_groups": ["Hamstrings"],
+      "model_numbers": ["SS-SLC"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Insignia Leg Curl",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Selectorized prone or standing leg curl machine for targeting hamstrings through knee flexion.",
+      "muscle_groups": ["Hamstrings"],
+      "model_numbers": ["SS-LC"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Insignia Calf Extension",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Selectorized standing calf extension machine for targeting the gastrocnemius and soleus through plantar flexion.",
+      "muscle_groups": ["Calves (Gastrocnemius)", "Soleus"],
+      "model_numbers": ["SS-CE"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Insignia Arc Leg Press",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Selectorized leg press with a unique arcing path of motion providing greater hip range of motion and more complete glute training compared to traditional linear leg press.",
+      "muscle_groups": ["Quadriceps", "Glutes", "Hamstrings", "Calves"],
+      "model_numbers": ["SS-SLP"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Insignia Glute",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Selectorized glute isolation machine for targeted hip extension and glute activation.",
+      "muscle_groups": ["Glutes", "Hamstrings"],
+      "model_numbers": ["SS-GL"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Hinge"
+    },
+    {
+      "name": "Insignia Glute Bridge",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Selectorized glute bridge machine for hip thrusting motion to develop glute strength and hypertrophy.",
+      "muscle_groups": ["Glutes", "Hamstrings", "Core"],
+      "model_numbers": ["SS-GLB"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Hinge"
+    },
+    {
+      "name": "Insignia Sit/Stand Hip Abduction",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Selectorized machine allowing seated or standing hip abduction for glute medius and hip abductor strengthening.",
+      "muscle_groups": ["Glute Medius", "Hip Abductors", "TFL"],
+      "model_numbers": ["SS-SHB"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Insignia Hip Adduction",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Selectorized seated hip adduction machine for targeting inner thigh and hip adductor muscles.",
+      "muscle_groups": ["Hip Adductors", "Inner Thigh"],
+      "model_numbers": ["SS-HAD"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Insignia Hip Abduction / Adduction",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Dual-function selectorized machine combining hip abduction and adduction for both outer and inner thigh training in one piece of equipment.",
+      "muscle_groups": ["Hip Abductors", "Hip Adductors", "Glute Medius", "Inner Thigh"],
+      "model_numbers": ["SS-HAA"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push / Pull"
+    },
+    {
+      "name": "Insignia Abdominal",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Selectorized abdominal crunch machine for guided core flexion and rectus abdominis development.",
+      "muscle_groups": ["Rectus Abdominis", "Core"],
+      "model_numbers": ["SS-AB"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Insignia Abdominal Advanced",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Advanced selectorized abdominal machine for deeper core flexion with additional range-of-motion capabilities.",
+      "muscle_groups": ["Rectus Abdominis", "Obliques", "Core"],
+      "model_numbers": ["SS-ABD"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Insignia Back Extension",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Selectorized back extension machine for strengthening the erector spinae and lower back muscles through guided spinal extension.",
+      "muscle_groups": ["Erector Spinae", "Glutes", "Hamstrings"],
+      "model_numbers": ["SS-BE"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Hinge"
+    },
+    {
+      "name": "Insignia Torso Rotation",
+      "brand": "Life Fitness",
+      "series": "Insignia Selectorized",
+      "purpose": "Selectorized torso rotation machine for targeting the obliques and core rotational strength.",
+      "muscle_groups": ["Obliques", "Core", "Transverse Abdominis"],
+      "model_numbers": ["SS-TR"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Rotation"
+    },
+
+    {
+      "name": "Axiom Chest Press",
+      "brand": "Life Fitness",
+      "series": "Axiom Selectorized",
+      "purpose": "Compact, low-profile selectorized chest press for horizontal pectoral pressing; suitable for any facility layout.",
+      "muscle_groups": ["Chest (Pectorals)", "Triceps", "Anterior Deltoids"],
+      "model_numbers": ["OP-CP"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Axiom Leg Press",
+      "brand": "Life Fitness",
+      "series": "Axiom Selectorized",
+      "purpose": "Selectorized leg press machine for developing lower body strength through a bilateral pushing movement.",
+      "muscle_groups": ["Quadriceps", "Glutes", "Hamstrings", "Calves"],
+      "model_numbers": ["OP-LP"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Axiom Seated Row",
+      "brand": "Life Fitness",
+      "series": "Axiom Selectorized",
+      "purpose": "Selectorized seated row machine for building upper and mid-back pulling strength.",
+      "muscle_groups": ["Latissimus Dorsi", "Rhomboids", "Biceps", "Rear Deltoids"],
+      "model_numbers": ["OP-RW"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Axiom Shoulder Press",
+      "brand": "Life Fitness",
+      "series": "Axiom Selectorized",
+      "purpose": "Selectorized overhead shoulder press for developing deltoid strength and overhead pressing ability.",
+      "muscle_groups": ["Shoulders (Deltoids)", "Triceps", "Upper Trapezius"],
+      "model_numbers": ["OP-SP"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Axiom Lat Pulldown",
+      "brand": "Life Fitness",
+      "series": "Axiom Selectorized",
+      "purpose": "Selectorized lat pulldown for building back width and vertical pulling strength.",
+      "muscle_groups": ["Latissimus Dorsi", "Biceps", "Rear Deltoids"],
+      "model_numbers": ["OP-PD"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Axiom Biceps Curl",
+      "brand": "Life Fitness",
+      "series": "Axiom Selectorized",
+      "purpose": "Selectorized biceps curl for isolated elbow flexion and biceps development.",
+      "muscle_groups": ["Biceps", "Brachialis"],
+      "model_numbers": ["OP-BC"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Axiom Multi-Press",
+      "brand": "Life Fitness",
+      "series": "Axiom Selectorized",
+      "purpose": "Versatile selectorized multi-press that accommodates multiple pressing angles and grips in one machine.",
+      "muscle_groups": ["Chest (Pectorals)", "Shoulders", "Triceps"],
+      "model_numbers": ["OP-MP"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Axiom Pulldown / Row",
+      "brand": "Life Fitness",
+      "series": "Axiom Selectorized",
+      "purpose": "Dual-function selectorized machine combining lat pulldown and seated row for comprehensive vertical and horizontal pulling.",
+      "muscle_groups": ["Latissimus Dorsi", "Rhomboids", "Biceps", "Rear Deltoids"],
+      "model_numbers": ["OP-LR"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Axiom Pectoral Fly / Rear Deltoid",
+      "brand": "Life Fitness",
+      "series": "Axiom Selectorized",
+      "purpose": "Dual-function selectorized machine combining pectoral fly and rear deltoid movements for chest and shoulder training.",
+      "muscle_groups": ["Chest (Pectorals)", "Rear Deltoids", "Rhomboids"],
+      "model_numbers": ["OP-FLY"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push / Pull"
+    },
+    {
+      "name": "Axiom Biceps Curl / Triceps Extension",
+      "brand": "Life Fitness",
+      "series": "Axiom Selectorized",
+      "purpose": "Dual-function selectorized machine combining biceps curl and triceps extension for comprehensive arm training.",
+      "muscle_groups": ["Biceps", "Triceps"],
+      "model_numbers": ["OP-BT"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push / Pull"
+    },
+    {
+      "name": "Axiom Triceps Extension",
+      "brand": "Life Fitness",
+      "series": "Axiom Selectorized",
+      "purpose": "Selectorized triceps extension machine for isolated elbow extension and triceps development.",
+      "muscle_groups": ["Triceps"],
+      "model_numbers": ["OP-TE"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Axiom Leg Extension",
+      "brand": "Life Fitness",
+      "series": "Axiom Selectorized",
+      "purpose": "Selectorized leg extension for isolating the quadriceps through open-chain knee extension.",
+      "muscle_groups": ["Quadriceps"],
+      "model_numbers": ["OP-LE"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Axiom Leg Curl",
+      "brand": "Life Fitness",
+      "series": "Axiom Selectorized",
+      "purpose": "Selectorized leg curl machine for targeting hamstrings through guided knee flexion.",
+      "muscle_groups": ["Hamstrings"],
+      "model_numbers": ["OP-LC"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Axiom Abdominal",
+      "brand": "Life Fitness",
+      "series": "Axiom Selectorized",
+      "purpose": "Selectorized abdominal crunch machine for guided core flexion and rectus abdominis training.",
+      "muscle_groups": ["Rectus Abdominis", "Core"],
+      "model_numbers": ["OP-AB"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Axiom Hip Abductor / Adductor",
+      "brand": "Life Fitness",
+      "series": "Axiom Selectorized",
+      "purpose": "Dual-function selectorized machine combining hip abduction and adduction for comprehensive inner and outer thigh training.",
+      "muscle_groups": ["Hip Abductors", "Hip Adductors", "Glute Medius", "Inner Thigh"],
+      "model_numbers": ["OP-HAA"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push / Pull"
+    },
+    {
+      "name": "Axiom Leg Curl / Extension",
+      "brand": "Life Fitness",
+      "series": "Axiom Selectorized",
+      "purpose": "Dual-function selectorized machine combining leg curl and extension for complete quadriceps and hamstring training.",
+      "muscle_groups": ["Quadriceps", "Hamstrings"],
+      "model_numbers": ["OP-LCE"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push / Pull"
+    },
+    {
+      "name": "Axiom Seated Leg Curl / Extension",
+      "brand": "Life Fitness",
+      "series": "Axiom Selectorized",
+      "purpose": "Dual-function seated selectorized machine providing both seated leg curl and leg extension movements.",
+      "muscle_groups": ["Quadriceps", "Hamstrings"],
+      "model_numbers": ["OP-SLCE"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push / Pull"
+    },
+    {
+      "name": "Axiom Abdominal / Back Extension",
+      "brand": "Life Fitness",
+      "series": "Axiom Selectorized",
+      "purpose": "Dual-function selectorized machine combining abdominal and back extension for balanced core training.",
+      "muscle_groups": ["Rectus Abdominis", "Erector Spinae", "Core"],
+      "model_numbers": ["OP-ABBA"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push / Pull"
+    },
+
+    {
+      "name": "Life Fitness Plate Loaded Incline Press",
+      "brand": "Life Fitness",
+      "series": "Life Fitness Plate Loaded",
+      "purpose": "Plate-loaded incline press for developing upper chest strength through an inclined pressing motion.",
+      "muscle_groups": ["Upper Chest (Pectorals)", "Anterior Deltoids", "Triceps"],
+      "model_numbers": ["SPLIP"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Life Fitness Plate Loaded Decline Press",
+      "brand": "Life Fitness",
+      "series": "Life Fitness Plate Loaded",
+      "purpose": "Plate-loaded decline press for targeting the lower chest through a decline pressing motion.",
+      "muscle_groups": ["Lower Chest (Pectorals)", "Triceps", "Anterior Deltoids"],
+      "model_numbers": ["SPLDCP"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Life Fitness Plate Loaded Shoulder Press",
+      "brand": "Life Fitness",
+      "series": "Life Fitness Plate Loaded",
+      "purpose": "Plate-loaded overhead shoulder press machine for building deltoid strength and mass.",
+      "muscle_groups": ["Shoulders (Deltoids)", "Triceps", "Upper Trapezius"],
+      "model_numbers": ["SPLSP"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Life Fitness Plate Loaded Pulldown",
+      "brand": "Life Fitness",
+      "series": "Life Fitness Plate Loaded",
+      "purpose": "Plate-loaded lat pulldown for developing back width and vertical pulling strength.",
+      "muscle_groups": ["Latissimus Dorsi", "Biceps", "Rear Deltoids"],
+      "model_numbers": ["SPLPD"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Life Fitness Plate Loaded High Row",
+      "brand": "Life Fitness",
+      "series": "Life Fitness Plate Loaded",
+      "purpose": "Plate-loaded high row machine for targeting upper back and lat muscles through a high-angle pulling motion.",
+      "muscle_groups": ["Latissimus Dorsi", "Rhomboids", "Rear Deltoids", "Biceps"],
+      "model_numbers": ["SPLHR"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Life Fitness Plate Loaded Row",
+      "brand": "Life Fitness",
+      "series": "Life Fitness Plate Loaded",
+      "purpose": "Plate-loaded seated row machine for building mid-back and lat pulling strength.",
+      "muscle_groups": ["Latissimus Dorsi", "Rhomboids", "Biceps", "Rear Deltoids"],
+      "model_numbers": ["SPLROW"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Life Fitness Plate Loaded Seated Dip",
+      "brand": "Life Fitness",
+      "series": "Life Fitness Plate Loaded",
+      "purpose": "Plate-loaded seated dip machine for targeted triceps and chest development through a pressing-down motion.",
+      "muscle_groups": ["Triceps", "Chest (Lower Pectorals)"],
+      "model_numbers": ["SPLDIP"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Life Fitness Plate Loaded Biceps Curl",
+      "brand": "Life Fitness",
+      "series": "Life Fitness Plate Loaded",
+      "purpose": "Plate-loaded standing or seated biceps curl machine for isolated elbow flexion and biceps development.",
+      "muscle_groups": ["Biceps", "Brachialis"],
+      "model_numbers": ["SPLBC"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Life Fitness Plate Loaded Linear Leg Press",
+      "brand": "Life Fitness",
+      "series": "Life Fitness Plate Loaded",
+      "purpose": "Plate-loaded linear leg press for developing lower body strength through a bilateral horizontal pushing movement.",
+      "muscle_groups": ["Quadriceps", "Glutes", "Hamstrings", "Calves"],
+      "model_numbers": ["SPLLLP"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Life Fitness Plate Loaded Kneeling Leg Curl",
+      "brand": "Life Fitness",
+      "series": "Life Fitness Plate Loaded",
+      "purpose": "Plate-loaded kneeling leg curl machine for isolating hamstrings through kneeling knee flexion.",
+      "muscle_groups": ["Hamstrings"],
+      "model_numbers": ["SPLKLC"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Life Fitness Plate Loaded Leg Extension",
+      "brand": "Life Fitness",
+      "series": "Life Fitness Plate Loaded",
+      "purpose": "Plate-loaded leg extension machine for isolating the quadriceps through open-chain knee extension.",
+      "muscle_groups": ["Quadriceps"],
+      "model_numbers": ["SPLLE"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Life Fitness Plate Loaded Calf Raise",
+      "brand": "Life Fitness",
+      "series": "Life Fitness Plate Loaded",
+      "purpose": "Plate-loaded standing calf raise machine for developing gastrocnemius and soleus strength.",
+      "muscle_groups": ["Calves (Gastrocnemius)", "Soleus"],
+      "model_numbers": ["SPLCALF"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Smith Machine (Life Fitness)",
+      "brand": "Life Fitness",
+      "series": "Life Fitness Plate Loaded",
+      "purpose": "Guided barbell Smith Machine for performing a wide variety of compound exercises (squats, bench press, shoulder press) with a fixed vertical bar path for added safety.",
+      "muscle_groups": ["Full Body", "Quadriceps", "Glutes", "Chest", "Shoulders", "Back"],
+      "model_numbers": ["SSM"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push / Squat / Hinge"
+    },
+    {
+      "name": "Smith Rack (Life Fitness)",
+      "brand": "Life Fitness",
+      "series": "Life Fitness Plate Loaded",
+      "purpose": "Guided barbell Smith Rack for compound exercises with additional rack-style features for squat and pressing movements.",
+      "muscle_groups": ["Full Body", "Quadriceps", "Glutes", "Chest", "Shoulders"],
+      "model_numbers": ["OP-SM"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push / Squat"
+    },
+
+    {
+      "name": "Cable Motion Dual Adjustable Pulley 4:1 with Stabilization",
+      "brand": "Life Fitness",
+      "series": "Cable Motion",
+      "purpose": "Dual adjustable pulley system with a 4:1 resistance ratio for lower starting resistances and a patented adjustable stability pad; supports nearly endless user-defined strength training movements.",
+      "muscle_groups": ["Full Body", "Chest", "Back", "Shoulders", "Arms", "Core", "Legs"],
+      "model_numbers": ["CMDAS", "CMDAP"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push / Pull / Rotation"
+    },
+    {
+      "name": "Cable Motion Dual Adjustable Pulley 2:1",
+      "brand": "Life Fitness",
+      "series": "Cable Motion",
+      "purpose": "Versatile dual adjustable pulley with an ergonomic pull-up bar and 90 inches of cable travel; supports a wide range of upper and lower body strength training exercises.",
+      "muscle_groups": ["Full Body", "Chest", "Back", "Shoulders", "Arms", "Core", "Legs"],
+      "model_numbers": ["OP-DAP"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push / Pull / Rotation"
+    },
+    {
+      "name": "Cable Motion Adjustable Cable Crossover",
+      "brand": "Life Fitness",
+      "series": "Cable Motion",
+      "purpose": "Premium dual adjustable pulley cable crossover machine with two fully adjustable pulleys allowing multi-dimensional cable training for upper and lower body.",
+      "muscle_groups": ["Chest", "Back", "Shoulders", "Arms", "Core", "Legs"],
+      "model_numbers": ["LCM-CC"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push / Pull / Rotation"
+    },
+    {
+      "name": "Universal Cable",
+      "brand": "Life Fitness",
+      "series": "Cable Motion",
+      "purpose": "Space-saving, inclusive single cable machine with a 3:1 cable ratio, one-hand adjustments, and ASTM F3021-17 certified accessibility for seated and standing users; ideal for functional training and rehab.",
+      "muscle_groups": ["Full Body", "Chest", "Back", "Shoulders", "Arms", "Core", "Legs"],
+      "model_numbers": ["LCM-UC"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push / Pull / Rotation"
+    },
+
+    {
+      "name": "Hammer Strength Plate Loaded Iso-Lateral Bench Press",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded iso-lateral bench press providing independent arm motion that mirrors natural barbell pressing while reducing muscular imbalances.",
+      "muscle_groups": ["Chest (Pectorals)", "Triceps", "Anterior Deltoids"],
+      "model_numbers": ["IL-BP"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Iso-Lateral Horizontal Bench Press",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded iso-lateral horizontal bench press for flat chest pressing with independent arm convergence.",
+      "muscle_groups": ["Chest (Pectorals)", "Triceps", "Anterior Deltoids"],
+      "model_numbers": ["IL-HBP"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Iso-Lateral Super Incline Press",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded iso-lateral super incline press for targeting the upper chest and shoulders at a steep incline with independent arm motion.",
+      "muscle_groups": ["Upper Chest", "Anterior Deltoids", "Triceps"],
+      "model_numbers": ["IL-FMP"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Iso-Lateral Incline Press",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded iso-lateral incline press for upper chest development with independent arm motion.",
+      "muscle_groups": ["Upper Chest", "Anterior Deltoids", "Triceps"],
+      "model_numbers": ["IL-IP"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Iso-Lateral Wide Chest",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded iso-lateral wide chest machine for developing the outer chest with a wide grip path.",
+      "muscle_groups": ["Chest (Pectorals - Outer)", "Anterior Deltoids", "Triceps"],
+      "model_numbers": ["IL-WC"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Iso-Lateral Decline Press",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded iso-lateral decline press for targeting the lower chest with independent arm motion.",
+      "muscle_groups": ["Lower Chest (Pectorals)", "Triceps", "Anterior Deltoids"],
+      "model_numbers": ["IL-DCP"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Iso-Lateral Shoulder Press",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded iso-lateral shoulder press for overhead deltoid development with independent arm motion that follows natural biomechanics.",
+      "muscle_groups": ["Shoulders (Deltoids)", "Triceps", "Upper Trapezius"],
+      "model_numbers": ["IL-SP"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Iso-Lateral Chest / Back",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded dual-function machine combining iso-lateral chest press and iso-lateral row movements in one unit.",
+      "muscle_groups": ["Chest (Pectorals)", "Back", "Triceps", "Biceps"],
+      "model_numbers": ["IL-CB"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Push / Pull"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Iso-Lateral Front Lat Pulldown",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded iso-lateral front lat pulldown for developing lat width and vertical pulling strength with independent arm motion.",
+      "muscle_groups": ["Latissimus Dorsi", "Biceps", "Rear Deltoids"],
+      "model_numbers": ["IL-PD"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Iso-Lateral Wide Pulldown",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded iso-lateral wide pulldown for outer lat development with a wide grip pulling motion.",
+      "muscle_groups": ["Latissimus Dorsi (Outer)", "Biceps", "Rear Deltoids"],
+      "model_numbers": ["IL-WPD"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Iso-Lateral High Row",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded iso-lateral high row for targeting upper back muscles through a high-angle pulling path.",
+      "muscle_groups": ["Upper Back", "Rhomboids", "Rear Deltoids", "Biceps"],
+      "model_numbers": ["IL-HR"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Iso-Lateral Row",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded iso-lateral seated row for mid and upper back development with independent arm motion.",
+      "muscle_groups": ["Latissimus Dorsi", "Rhomboids", "Biceps", "Rear Deltoids"],
+      "model_numbers": ["IL-ROW"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Iso-Lateral D.Y. Row",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded iso-lateral Dorian Yates-style row for deep lat and mid-back engagement with an underhand grip pulling motion.",
+      "muscle_groups": ["Latissimus Dorsi", "Rhomboids", "Biceps"],
+      "model_numbers": ["IL-DRW"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Iso-Lateral Low Row",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded iso-lateral low row for targeting lower lat and mid-back with a low-angle horizontal pull.",
+      "muscle_groups": ["Lower Latissimus Dorsi", "Rhomboids", "Biceps"],
+      "model_numbers": ["IL-LR"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Super Fly",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded chest fly machine with both flat and decline positions for targeting the chest from multiple angles and maximizing pectoral engagement.",
+      "muscle_groups": ["Chest (Pectorals)", "Anterior Deltoids"],
+      "model_numbers": ["PL-FLY"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Lateral Raise",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded lateral raise machine for isolating the medial deltoids and building shoulder width.",
+      "muscle_groups": ["Shoulders (Medial Deltoids)", "Trapezius"],
+      "model_numbers": ["PL-LR"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Pullover",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded pullover machine for developing the lats, chest, and serratus anterior through a long arc pulling movement.",
+      "muscle_groups": ["Latissimus Dorsi", "Chest (Pectorals)", "Serratus Anterior"],
+      "model_numbers": ["PL-PO"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Seated Biceps",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded seated biceps curl machine for strict, isolated elbow flexion and biceps development.",
+      "muscle_groups": ["Biceps", "Brachialis"],
+      "model_numbers": ["PL-BI"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Seated / Standing Shrug",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded shrug machine (seated or standing) for targeting the upper trapezius and neck muscles through scapular elevation.",
+      "muscle_groups": ["Trapezius (Upper)", "Neck"],
+      "model_numbers": ["PL-SH"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded 4-Way Neck",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded four-way neck machine for strengthening the neck in flexion, extension, and lateral flexion directions.",
+      "muscle_groups": ["Neck", "Cervical Muscles"],
+      "model_numbers": ["PL-4W"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Push / Pull"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Abdominal Oblique Crunch",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded abdominal machine targeting both the rectus abdominis and obliques through a crunch and rotation movement.",
+      "muscle_groups": ["Rectus Abdominis", "Obliques", "Core"],
+      "model_numbers": ["PL-AB"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Seated Dip",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded seated dip machine for targeting triceps and lower chest through a controlled pressing motion.",
+      "muscle_groups": ["Triceps", "Lower Chest"],
+      "model_numbers": ["PL-DIP"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Gripper",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded grip strengthening machine for developing forearm flexors, hand strength, and grip endurance.",
+      "muscle_groups": ["Forearms", "Grip Muscles"],
+      "model_numbers": ["PL-GRIP"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded T-Bar Row",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded T-bar row for heavy mid-back and lat development through a low-angle bilateral rowing motion.",
+      "muscle_groups": ["Latissimus Dorsi", "Rhomboids", "Biceps", "Erector Spinae"],
+      "model_numbers": ["PL-TBR"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Linear Leg Press",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded linear sled leg press for heavy lower body strength development through a bilateral pushing movement.",
+      "muscle_groups": ["Quadriceps", "Glutes", "Hamstrings", "Calves"],
+      "model_numbers": ["HSLLP"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Hack Squat",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded hack squat machine for developing the quadriceps and glutes through a guided squat pattern.",
+      "muscle_groups": ["Quadriceps", "Glutes", "Hamstrings"],
+      "model_numbers": ["PL-HSQ2"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Squat"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded V-Squat",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded V-squat machine with a diverging foot placement angle for targeting the quadriceps, glutes, and hips through a guided squat pattern.",
+      "muscle_groups": ["Quadriceps", "Glutes", "Hamstrings", "Hip Flexors"],
+      "model_numbers": ["PL-VSQ"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Squat"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Super Squat Press",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded super squat press incorporating legendary Cybex squat press biomechanics for heavy lower body development with greater quad and glute engagement.",
+      "muscle_groups": ["Quadriceps", "Glutes", "Hamstrings", "Calves"],
+      "model_numbers": ["PL-SSP"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Push / Squat"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Pendulum-X Squat",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded pendulum squat machine driving total-body extension for unmatched power; unlike traditional pendulums, provides full hip extension for maximum glute activation.",
+      "muscle_groups": ["Quadriceps", "Glutes", "Hamstrings", "Calves", "Core"],
+      "model_numbers": ["PL-XSQ"],
+      "difficulty_level": "Advanced",
+      "movement_type": "Squat"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Belt Squat",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded belt squat machine for lower body squatting with load transferred through the hips, reducing spinal compression compared to barbell squatting.",
+      "muscle_groups": ["Quadriceps", "Glutes", "Hamstrings", "Calves"],
+      "model_numbers": ["PL-BSQ"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Squat"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Glute Drive",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded glute drive (hip thrust) machine for isolating glutes through hip extension in a hip thrusting movement.",
+      "muscle_groups": ["Glutes", "Hamstrings", "Core"],
+      "model_numbers": ["PL-GLD"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Hinge"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Assisted Nordic Hamstring",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded assisted Nordic hamstring machine for performing the challenging Nordic curl with plate assistance to accommodate different strength levels.",
+      "muscle_groups": ["Hamstrings", "Glutes", "Calves"],
+      "model_numbers": ["PL-ANH"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Hinge"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Glute Ham / Reverse Hyper Combo",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Combination plate-loaded machine performing both glute ham raises and reverse hyperextensions for comprehensive posterior chain development.",
+      "muscle_groups": ["Hamstrings", "Glutes", "Erector Spinae", "Calves"],
+      "model_numbers": ["PL-GHRH"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Hinge"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Iso-Lateral Leg Extension",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded iso-lateral leg extension for isolating the quadriceps with independent leg action.",
+      "muscle_groups": ["Quadriceps"],
+      "model_numbers": ["IL-LE"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Iso-Lateral Kneeling Leg Curl",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded iso-lateral kneeling leg curl for isolating hamstrings independently through kneeling knee flexion.",
+      "muscle_groups": ["Hamstrings"],
+      "model_numbers": ["IL-KLC"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Iso-Lateral Leg Curl",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded iso-lateral leg curl for independent hamstring training through bilateral or unilateral knee flexion.",
+      "muscle_groups": ["Hamstrings"],
+      "model_numbers": ["IL-LC"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Seated Calf Raise",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded seated calf raise machine for targeting the soleus through plantar flexion in a seated position.",
+      "muscle_groups": ["Soleus", "Calves (Gastrocnemius)"],
+      "model_numbers": ["PL-CALF"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength Plate Loaded Tibia Dorsi Flexion",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Plate-loaded tibialis anterior machine for strengthening the shin muscles and improving ankle dorsiflexion.",
+      "muscle_groups": ["Tibialis Anterior", "Shin"],
+      "model_numbers": ["PL-TIB"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength Smith Machine",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Heavy-duty Smith Machine with a guided vertical barbell path for safe performance of squats, bench press, shoulder press, and other compound movements.",
+      "muscle_groups": ["Full Body", "Quadriceps", "Glutes", "Chest", "Shoulders", "Back"],
+      "model_numbers": ["HSSM"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push / Squat / Hinge"
+    },
+    {
+      "name": "Hammer Strength Vertical Smith Machine",
+      "brand": "Hammer Strength",
+      "series": "Plate Loaded",
+      "purpose": "Vertical Smith Machine variant with a true vertical bar path for strict pressing and squatting movements.",
+      "muscle_groups": ["Full Body", "Quadriceps", "Glutes", "Chest", "Shoulders"],
+      "model_numbers": ["HSSM-V"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push / Squat"
+    },
+
+    {
+      "name": "Ground Base Jammer",
+      "brand": "Hammer Strength",
+      "series": "Ground Base",
+      "purpose": "Plate-loaded ground-based pressing and pushing machine for developing explosive upper body power and functional strength while keeping the user grounded.",
+      "muscle_groups": ["Chest", "Shoulders", "Triceps", "Core", "Legs (stabilizers)"],
+      "model_numbers": ["GB-J"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Ground Base Multi Squat",
+      "brand": "Hammer Strength",
+      "series": "Ground Base",
+      "purpose": "Plate-loaded ground-based multi-squat machine allowing multiple squat variations to develop lower body power while maintaining foot contact with the ground.",
+      "muscle_groups": ["Quadriceps", "Glutes", "Hamstrings", "Calves", "Core"],
+      "model_numbers": ["GB-MSQ"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Squat"
+    },
+    {
+      "name": "Ground Base Combo Twist",
+      "brand": "Hammer Strength",
+      "series": "Ground Base",
+      "purpose": "Plate-loaded ground-based rotational machine for developing core rotational power and oblique strength for sports-specific training.",
+      "muscle_groups": ["Obliques", "Core", "Hips", "Shoulders"],
+      "model_numbers": ["GB-CT"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Rotation"
+    },
+    {
+      "name": "Ground Base Squat High Pull",
+      "brand": "Hammer Strength",
+      "series": "Ground Base",
+      "purpose": "Plate-loaded ground-based machine combining a squat with a high pull for developing explosive full-body power through triple extension.",
+      "muscle_groups": ["Quadriceps", "Glutes", "Hamstrings", "Shoulders", "Trapezius", "Core"],
+      "model_numbers": ["GB-SHP"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Squat / Pull"
+    },
+
+    {
+      "name": "Hammer Strength Select Chest Press",
+      "brand": "Hammer Strength",
+      "series": "Hammer Select Selectorized",
+      "purpose": "Selectorized chest press machine designed with Hammer Strength biomechanics and an industrial aesthetic for horizontal pectoral development.",
+      "muscle_groups": ["Chest (Pectorals)", "Triceps", "Anterior Deltoids"],
+      "model_numbers": ["HS-CP"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength Select Fixed Pulldown",
+      "brand": "Hammer Strength",
+      "series": "Hammer Select Selectorized",
+      "purpose": "Selectorized fixed-path lat pulldown for developing lat width and vertical pulling strength.",
+      "muscle_groups": ["Latissimus Dorsi", "Biceps", "Rear Deltoids"],
+      "model_numbers": ["HS-FPD"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength Select Lateral Raise",
+      "brand": "Hammer Strength",
+      "series": "Hammer Select Selectorized",
+      "purpose": "Selectorized lateral raise machine for isolating the medial deltoids.",
+      "muscle_groups": ["Shoulders (Medial Deltoids)", "Trapezius"],
+      "model_numbers": ["HS-LR"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength Select Pectoral Fly",
+      "brand": "Hammer Strength",
+      "series": "Hammer Select Selectorized",
+      "purpose": "Selectorized pectoral fly machine for targeting the inner chest through an arc fly motion.",
+      "muscle_groups": ["Chest (Pectorals)", "Anterior Deltoids"],
+      "model_numbers": ["HS-PEC"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength Select Pectoral Fly / Rear Deltoid",
+      "brand": "Hammer Strength",
+      "series": "Hammer Select Selectorized",
+      "purpose": "Dual-function selectorized machine combining pectoral fly and rear deltoid exercises.",
+      "muscle_groups": ["Chest (Pectorals)", "Rear Deltoids", "Rhomboids"],
+      "model_numbers": ["HS-FLY"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push / Pull"
+    },
+    {
+      "name": "Hammer Strength Select Assist Dip Chin",
+      "brand": "Hammer Strength",
+      "series": "Hammer Select Selectorized",
+      "purpose": "Selectorized assisted dip and chin-up machine for performing dips and pull-ups with reduced effective bodyweight.",
+      "muscle_groups": ["Triceps", "Chest", "Latissimus Dorsi", "Biceps"],
+      "model_numbers": ["HS-ADC"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push / Pull"
+    },
+    {
+      "name": "Hammer Strength Select Biceps Curl",
+      "brand": "Hammer Strength",
+      "series": "Hammer Select Selectorized",
+      "purpose": "Selectorized biceps curl for isolated elbow flexion and biceps development.",
+      "muscle_groups": ["Biceps", "Brachialis"],
+      "model_numbers": ["HS-BC"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength Select Seated Row",
+      "brand": "Hammer Strength",
+      "series": "Hammer Select Selectorized",
+      "purpose": "Selectorized seated row machine for upper and mid-back horizontal pulling strength development.",
+      "muscle_groups": ["Latissimus Dorsi", "Rhomboids", "Biceps", "Rear Deltoids"],
+      "model_numbers": ["HS-RW"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength Select Shoulder Press",
+      "brand": "Hammer Strength",
+      "series": "Hammer Select Selectorized",
+      "purpose": "Selectorized overhead shoulder press for developing deltoid strength and overhead pushing ability.",
+      "muscle_groups": ["Shoulders (Deltoids)", "Triceps", "Upper Trapezius"],
+      "model_numbers": ["HS-SP"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength Select Triceps Extension",
+      "brand": "Hammer Strength",
+      "series": "Hammer Select Selectorized",
+      "purpose": "Selectorized triceps extension machine for isolating the triceps through elbow extension.",
+      "muscle_groups": ["Triceps"],
+      "model_numbers": ["HS-TE"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength Select Lat Pulldown",
+      "brand": "Hammer Strength",
+      "series": "Hammer Select Selectorized",
+      "purpose": "Selectorized lat pulldown for vertical pulling and lat width development.",
+      "muscle_groups": ["Latissimus Dorsi", "Biceps", "Rear Deltoids"],
+      "model_numbers": ["HS-PD"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength Select Leg Extension",
+      "brand": "Hammer Strength",
+      "series": "Hammer Select Selectorized",
+      "purpose": "Selectorized leg extension for isolating the quadriceps through open-chain knee extension.",
+      "muscle_groups": ["Quadriceps"],
+      "model_numbers": ["HS-LE"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength Select Seated Leg Press",
+      "brand": "Hammer Strength",
+      "series": "Hammer Select Selectorized",
+      "purpose": "Selectorized seated leg press for lower body strength development through a bilateral pushing pattern.",
+      "muscle_groups": ["Quadriceps", "Glutes", "Hamstrings", "Calves"],
+      "model_numbers": ["HS-SLP"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength Select Horizontal Calf",
+      "brand": "Hammer Strength",
+      "series": "Hammer Select Selectorized",
+      "purpose": "Selectorized horizontal calf machine for developing the gastrocnemius and soleus through a horizontal plantar flexion movement.",
+      "muscle_groups": ["Calves (Gastrocnemius)", "Soleus"],
+      "model_numbers": ["HS-HC"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength Select Back Extension",
+      "brand": "Hammer Strength",
+      "series": "Hammer Select Selectorized",
+      "purpose": "Selectorized back extension machine for strengthening the erector spinae and lower back.",
+      "muscle_groups": ["Erector Spinae", "Glutes", "Hamstrings"],
+      "model_numbers": ["HS-BE"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Hinge"
+    },
+    {
+      "name": "Hammer Strength Select Seated Leg Curl",
+      "brand": "Hammer Strength",
+      "series": "Hammer Select Selectorized",
+      "purpose": "Selectorized seated leg curl for targeting hamstrings through knee flexion in a seated position.",
+      "muscle_groups": ["Hamstrings"],
+      "model_numbers": ["HS-SLC"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength Select Standing Calf",
+      "brand": "Hammer Strength",
+      "series": "Hammer Select Selectorized",
+      "purpose": "Selectorized standing calf raise for developing gastrocnemius strength through plantar flexion under load.",
+      "muscle_groups": ["Calves (Gastrocnemius)", "Soleus"],
+      "model_numbers": ["HS-SC"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength Select Abdominal Crunch",
+      "brand": "Hammer Strength",
+      "series": "Hammer Select Selectorized",
+      "purpose": "Selectorized abdominal crunch machine for guided core flexion and rectus abdominis training.",
+      "muscle_groups": ["Rectus Abdominis", "Core"],
+      "model_numbers": ["HS-ABC"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength Select Hip / Glute",
+      "brand": "Hammer Strength",
+      "series": "Hammer Select Selectorized",
+      "purpose": "Selectorized hip and glute machine for targeted glute and hip extensor strength development.",
+      "muscle_groups": ["Glutes", "Hip Extensors", "Hamstrings"],
+      "model_numbers": ["HS-HG"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Hinge"
+    },
+    {
+      "name": "Hammer Strength Select Leg Curl",
+      "brand": "Hammer Strength",
+      "series": "Hammer Select Selectorized",
+      "purpose": "Selectorized leg curl (prone or seated) for targeting the hamstrings through knee flexion.",
+      "muscle_groups": ["Hamstrings"],
+      "model_numbers": ["HS-LC"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength Select Hip Abduction",
+      "brand": "Hammer Strength",
+      "series": "Hammer Select Selectorized",
+      "purpose": "Selectorized hip abduction machine for targeting the glute medius and outer hip through lateral leg movement.",
+      "muscle_groups": ["Glute Medius", "Hip Abductors", "TFL"],
+      "model_numbers": ["HS-HAB"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength Select Hip Adduction",
+      "brand": "Hammer Strength",
+      "series": "Hammer Select Selectorized",
+      "purpose": "Selectorized hip adduction machine for targeting the inner thigh and hip adductors.",
+      "muscle_groups": ["Hip Adductors", "Inner Thigh"],
+      "model_numbers": ["HS-HAD"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+
+    {
+      "name": "Hammer Strength MTS Abdominal Crunch",
+      "brand": "Hammer Strength",
+      "series": "Motion Technology Selectorized (MTS)",
+      "purpose": "Selectorized iso-lateral abdominal crunch with independent arm action for targeted core flexion.",
+      "muscle_groups": ["Rectus Abdominis", "Core"],
+      "model_numbers": ["MTSAB"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength MTS Iso-Lateral Biceps Curl",
+      "brand": "Hammer Strength",
+      "series": "Motion Technology Selectorized (MTS)",
+      "purpose": "Selectorized iso-lateral biceps curl with independent arm action for isolated elbow flexion.",
+      "muscle_groups": ["Biceps", "Brachialis"],
+      "model_numbers": ["MTSBC"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength MTS Iso-Lateral Chest Press",
+      "brand": "Hammer Strength",
+      "series": "Motion Technology Selectorized (MTS)",
+      "purpose": "Selectorized iso-lateral chest press with independent arm convergence for pectoral development.",
+      "muscle_groups": ["Chest (Pectorals)", "Triceps", "Anterior Deltoids"],
+      "model_numbers": ["MTSCP"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength MTS Iso-Lateral Incline Press",
+      "brand": "Hammer Strength",
+      "series": "Motion Technology Selectorized (MTS)",
+      "purpose": "Selectorized iso-lateral incline press with independent arm motion for upper chest development.",
+      "muscle_groups": ["Upper Chest", "Anterior Deltoids", "Triceps"],
+      "model_numbers": ["MTSIP"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength MTS Iso-Lateral Decline Press",
+      "brand": "Hammer Strength",
+      "series": "Motion Technology Selectorized (MTS)",
+      "purpose": "Selectorized iso-lateral decline press with independent arm motion for lower chest targeting.",
+      "muscle_groups": ["Lower Chest", "Triceps", "Anterior Deltoids"],
+      "model_numbers": ["MTSDP"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength MTS Iso-Lateral Triceps Extension",
+      "brand": "Hammer Strength",
+      "series": "Motion Technology Selectorized (MTS)",
+      "purpose": "Selectorized iso-lateral triceps extension with independent arm motion for isolated triceps development.",
+      "muscle_groups": ["Triceps"],
+      "model_numbers": ["MTSTE"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength MTS Iso-Lateral Shoulder Press",
+      "brand": "Hammer Strength",
+      "series": "Motion Technology Selectorized (MTS)",
+      "purpose": "Selectorized iso-lateral shoulder press with independent arm motion for deltoid development.",
+      "muscle_groups": ["Shoulders (Deltoids)", "Triceps", "Upper Trapezius"],
+      "model_numbers": ["MTSSP"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength MTS Iso-Lateral High Row",
+      "brand": "Hammer Strength",
+      "series": "Motion Technology Selectorized (MTS)",
+      "purpose": "Selectorized iso-lateral high row with independent arm motion for upper back and rear deltoid development.",
+      "muscle_groups": ["Upper Back", "Rhomboids", "Rear Deltoids", "Biceps"],
+      "model_numbers": ["MTSHR"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength MTS Iso-Lateral Row",
+      "brand": "Hammer Strength",
+      "series": "Motion Technology Selectorized (MTS)",
+      "purpose": "Selectorized iso-lateral seated row with independent arm motion for lat and mid-back development.",
+      "muscle_groups": ["Latissimus Dorsi", "Rhomboids", "Biceps", "Rear Deltoids"],
+      "model_numbers": ["MTSRW"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength MTS Iso-Lateral Front Pulldown",
+      "brand": "Hammer Strength",
+      "series": "Motion Technology Selectorized (MTS)",
+      "purpose": "Selectorized iso-lateral front pulldown with independent arm motion for lat and upper back development.",
+      "muscle_groups": ["Latissimus Dorsi", "Biceps", "Rear Deltoids"],
+      "model_numbers": ["MTSFP"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+    {
+      "name": "Hammer Strength MTS Iso-Lateral Leg Extension",
+      "brand": "Hammer Strength",
+      "series": "Motion Technology Selectorized (MTS)",
+      "purpose": "Selectorized iso-lateral leg extension with independent leg action for quadriceps isolation.",
+      "muscle_groups": ["Quadriceps"],
+      "model_numbers": ["MTSLE"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Push"
+    },
+    {
+      "name": "Hammer Strength MTS Iso-Lateral Kneeling Leg Curl",
+      "brand": "Hammer Strength",
+      "series": "Motion Technology Selectorized (MTS)",
+      "purpose": "Selectorized iso-lateral kneeling leg curl with independent leg motion for hamstring isolation.",
+      "muscle_groups": ["Hamstrings"],
+      "model_numbers": ["MTSKC"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Pull"
+    },
+
+    {
+      "name": "HD Elite iD Power Rack",
+      "brand": "Hammer Strength",
+      "series": "HD Elite iD",
+      "purpose": "Premium fully customizable power rack system for elite athletes and high-performance facilities; supports squatting, bench pressing, and all major barbell compound movements.",
+      "muscle_groups": ["Full Body", "Quadriceps", "Glutes", "Chest", "Back", "Shoulders"],
+      "model_numbers": ["ELT-PR-STRD"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Squat / Push / Pull / Hinge"
+    },
+    {
+      "name": "HD Elite iD Half Rack",
+      "brand": "Hammer Strength",
+      "series": "HD Elite iD",
+      "purpose": "Premium half rack configuration of the HD Elite iD system for squat, pressing, and pulling exercises in a smaller footprint.",
+      "muscle_groups": ["Full Body", "Quadriceps", "Glutes", "Chest", "Back", "Shoulders"],
+      "model_numbers": ["ELT-HR-STRD"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Squat / Push / Pull / Hinge"
+    },
+    {
+      "name": "HD Athletic NX Power Rack",
+      "brand": "Hammer Strength",
+      "series": "HD Athletic NX",
+      "purpose": "Modular power rack ideal for high schools and training facilities that need Hammer Strength quality with flexible sizing options for barbell compound training.",
+      "muscle_groups": ["Full Body", "Quadriceps", "Glutes", "Chest", "Back", "Shoulders"],
+      "model_numbers": ["HDW-PR"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Squat / Push / Pull / Hinge"
+    },
+    {
+      "name": "HD Athletic NX Half Rack",
+      "brand": "Hammer Strength",
+      "series": "HD Athletic NX",
+      "purpose": "Modular half rack for squat, pressing, and pull-up exercises in a space-saving footprint for high schools and training facilities.",
+      "muscle_groups": ["Full Body", "Quadriceps", "Glutes", "Chest", "Back", "Shoulders"],
+      "model_numbers": ["HDW-HR"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Squat / Push / Pull"
+    },
+    {
+      "name": "HD Athletic NX Squat Stand",
+      "brand": "Hammer Strength",
+      "series": "HD Athletic NX",
+      "purpose": "Modular adjustable squat stand for free barbell squatting and pressing with a minimal footprint.",
+      "muscle_groups": ["Quadriceps", "Glutes", "Hamstrings", "Core"],
+      "model_numbers": ["HDW-SQST"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Squat"
+    },
+
+    {
+      "name": "HD Tread",
+      "brand": "Hammer Strength",
+      "series": "HD Performance Trainers",
+      "purpose": "Self-powered curved treadmill for high-performance sprint and conditioning training; no motor required as the user's effort drives the belt.",
+      "muscle_groups": ["Full Body", "Quadriceps", "Hamstrings", "Glutes", "Calves", "Core"],
+      "model_numbers": ["PT-ST-01"],
+      "difficulty_level": "Intermediate to Advanced",
+      "movement_type": "Cardio / Locomotion"
+    },
+    {
+      "name": "HD SPARC",
+      "brand": "Hammer Strength",
+      "series": "HD Performance Trainers",
+      "purpose": "Non-impact resisted sprint trainer requiring high knee and glute drive for developing explosive power, force production, and sprint speed without ground impact.",
+      "muscle_groups": ["Quadriceps", "Glutes", "Hamstrings", "Hip Flexors", "Core"],
+      "model_numbers": ["PT-SC-01"],
+      "difficulty_level": "Advanced",
+      "movement_type": "Cardio / Sprint"
+    },
+    {
+      "name": "HD Air Bike",
+      "brand": "Hammer Strength",
+      "series": "HD Performance Trainers",
+      "purpose": "Air resistance fan bike for high-intensity total body interval training; resistance increases naturally with effort, ideal for conditioning and HIIT workouts.",
+      "muscle_groups": ["Full Body", "Quadriceps", "Hamstrings", "Glutes", "Shoulders", "Arms", "Core"],
+      "model_numbers": ["PT-AB-01"],
+      "difficulty_level": "Beginner to Advanced",
+      "movement_type": "Cardio / Push-Pull"
+    }
+
+  ]
+}

@@ -11,11 +11,43 @@ export async function GET(req: Request) {
   }
 
   const { searchParams } = new URL(req.url)
+  const source = (searchParams.get('source') ?? 'api_ninjas').trim()
   const name = (searchParams.get('name') ?? '').trim()
   const type = (searchParams.get('type') ?? '').trim()
   const muscle = (searchParams.get('muscle') ?? '').trim()
   const difficulty = (searchParams.get('difficulty') ?? '').trim()
   const equipment = (searchParams.get('equipment') ?? '').trim()
+
+  if (source === 'life_fitness') {
+    const parts = [name, type, muscle, difficulty, equipment].filter((p) => p.length > 0)
+
+    const rows =
+      parts.length === 0
+        ? await prisma.lifeFitnessMachine.findMany({
+            orderBy: { name: 'asc' },
+          })
+        : await prisma.lifeFitnessMachine.findMany({
+            where: {
+              AND: parts.map((p) => ({
+                searchText: { contains: p, mode: 'insensitive' as const },
+              })),
+            },
+            take: 200,
+            orderBy: { name: 'asc' },
+          })
+
+    const results = rows.map((row) => ({
+      name: row.name,
+      instructions: row.purpose,
+      type: row.movementType ?? undefined,
+      muscle: row.muscleGroups.length ? row.muscleGroups.join(', ') : undefined,
+      equipment: [row.brand, row.series].filter(Boolean).join(' · ') || 'Life Fitness',
+      difficulty: row.difficultyLevel ?? undefined,
+      source: 'life_fitness' as const,
+    }))
+
+    return NextResponse.json({ ok: true, results })
+  }
 
   if (!name && !type && !muscle && !difficulty && !equipment) {
     return NextResponse.json({ ok: true, results: [] as any[] })
@@ -84,4 +116,3 @@ export async function GET(req: Request) {
 
   return NextResponse.json({ ok: true, results: merged.slice(0, 20) })
 }
-

@@ -18,7 +18,7 @@ type SearchResult = {
   equipment?: string
   difficulty?: string
   instructions?: string
-  source?: 'library' | 'api'
+  source?: 'library' | 'api' | 'life_fitness'
 }
 
 type SearchResponse = { ok: true; results: SearchResult[] } | { ok: false; error: string }
@@ -138,6 +138,9 @@ function buildMeta(r: SearchResult) {
     const rest = [r.muscle, r.equipment, r.difficulty, r.type].filter(Boolean).join(' · ')
     return rest ? `Library · ${rest}` : 'Library'
   }
+  if (r.source === 'life_fitness') {
+    return [r.type, r.muscle, r.equipment, r.difficulty].filter(Boolean).join(' · ')
+  }
   return [r.muscle, r.equipment, r.difficulty, r.type].filter(Boolean).join(' · ')
 }
 
@@ -184,6 +187,7 @@ export function CoachProgramBuilderPage() {
   const [activeSlot, setActiveSlot] = useState(0)
   const [slotsByWeek, setSlotsByWeek] = useState<PlannedExercise[][][]>(() => emptyWeeks(4, 3))
 
+  const [searchSource, setSearchSource] = useState<'api_ninjas' | 'life_fitness' | ''>('')
   const [name, setName] = useState('')
   const [muscle, setMuscle] = useState('')
   const [type, setType] = useState('')
@@ -359,7 +363,15 @@ export function CoachProgramBuilderPage() {
     return Array.from({ length: daysPerWeek }, (_, d) => (week?.[d] ? [...week[d]] : []))
   }, [slotsByWeek, coachWeekIndex, daysPerWeek])
 
-  const canSearch = !!(name.trim() || muscle.trim() || type.trim() || difficulty.trim() || equipment.trim())
+  const canSearch = !!(
+    searchSource &&
+    (searchSource === 'life_fitness' ||
+      name.trim() ||
+      muscle.trim() ||
+      type.trim() ||
+      difficulty.trim() ||
+      equipment.trim())
+  )
 
   async function runSearch() {
     setError(null)
@@ -367,6 +379,7 @@ export function CoachProgramBuilderPage() {
     setPending(true)
     try {
       const url = new URL('/api/coach/exercises/search', window.location.origin)
+      url.searchParams.set('source', searchSource === 'life_fitness' ? 'life_fitness' : 'api_ninjas')
       if (name.trim()) url.searchParams.set('name', name.trim())
       if (muscle.trim()) url.searchParams.set('muscle', muscle.trim())
       if (type.trim()) url.searchParams.set('type', type.trim())
@@ -1243,12 +1256,34 @@ export function CoachProgramBuilderPage() {
         <section className={styles.panel}>
           <h2 className="text-lg font-semibold text-slate-100">Search exercises</h2>
           <p className={styles.muted}>
-            Library matches appear first; API Ninjas fills the rest. Adds to week {activeProgramWeek}, day{' '}
-            {activeSlot + 1}.
+            {searchSource === 'life_fitness'
+              ? 'Life Fitness catalog: Search with empty filters for the full list, or narrow with fields. '
+              : searchSource === 'api_ninjas'
+                ? 'Library matches appear first; API Ninjas fills the rest. '
+                : 'Choose a catalog, then add filters (API Ninjas needs at least one). '}
+            Adds to week {activeProgramWeek}, day {activeSlot + 1}.
             {athleteEditMode || libraryEditMode
               ? ' You can use “Copy this day to later weeks” on a day card to duplicate that day forward.'
               : ''}
           </p>
+          <div className="mb-4 max-w-md">
+            <div className={styles.label}>Search catalog</div>
+            <select
+              className={styles.select}
+              value={searchSource}
+              onChange={(e) => {
+                const v = e.target.value as typeof searchSource
+                setSearchSource(v)
+                setResults([])
+                setError(null)
+              }}
+              disabled={formLocked}
+            >
+              <option value="">— Choose where to search —</option>
+              <option value="api_ninjas">API Ninjas (exercises)</option>
+              <option value="life_fitness">Life Fitness (machines catalog)</option>
+            </select>
+          </div>
           <div className={styles.formGrid}>
             <div>
               <div className={styles.label}>Name</div>
@@ -1256,7 +1291,8 @@ export function CoachProgramBuilderPage() {
                 className={styles.input}
                 value={name}
                 onChange={(e) => setName(e.target.value)}
-                disabled={formLocked}
+                placeholder={searchSource === 'life_fitness' ? 'e.g. Arc, treadmill' : undefined}
+                disabled={formLocked || !searchSource}
               />
             </div>
             <div>
@@ -1265,7 +1301,7 @@ export function CoachProgramBuilderPage() {
                 className={styles.input}
                 value={muscle}
                 onChange={(e) => setMuscle(e.target.value)}
-                disabled={formLocked}
+                disabled={formLocked || !searchSource}
               />
             </div>
             <div>
@@ -1274,7 +1310,8 @@ export function CoachProgramBuilderPage() {
                 className={styles.input}
                 value={type}
                 onChange={(e) => setType(e.target.value)}
-                disabled={formLocked}
+                placeholder={searchSource === 'life_fitness' ? 'e.g. Cardio' : undefined}
+                disabled={formLocked || !searchSource}
               />
             </div>
             <div>
@@ -1283,7 +1320,7 @@ export function CoachProgramBuilderPage() {
                 className={styles.input}
                 value={difficulty}
                 onChange={(e) => setDifficulty(e.target.value)}
-                disabled={formLocked}
+                disabled={formLocked || !searchSource}
               />
             </div>
             <div>
@@ -1292,7 +1329,8 @@ export function CoachProgramBuilderPage() {
                 className={styles.input}
                 value={equipment}
                 onChange={(e) => setEquipment(e.target.value)}
-                disabled={formLocked}
+                placeholder={searchSource === 'life_fitness' ? 'e.g. Symbio, Integrity' : undefined}
+                disabled={formLocked || !searchSource}
               />
             </div>
           </div>

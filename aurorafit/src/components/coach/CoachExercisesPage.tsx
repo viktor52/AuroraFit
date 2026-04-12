@@ -11,12 +11,15 @@ type SearchResult = {
   equipment?: string
   difficulty?: string
   instructions?: string
-  source?: 'library' | 'api'
+  source?: 'library' | 'api' | 'life_fitness'
 }
 
 type SearchResponse = { ok: true; results: SearchResult[] } | { ok: false; error: string }
 
 function buildMeta(r: SearchResult) {
+  if (r.source === 'life_fitness') {
+    return [r.type, r.muscle, r.equipment, r.difficulty].filter(Boolean).join(' · ')
+  }
   return [r.muscle, r.equipment, r.difficulty, r.type].filter(Boolean).join(' · ')
 }
 
@@ -25,6 +28,7 @@ export function CoachExercisesPage() {
   const navExerciseLibraryActive = pathname === '/coach/exercise-library'
   const navProgramLibraryActive = pathname === '/coach/program-library'
   const [menuOpen, setMenuOpen] = useState(false)
+  const [searchSource, setSearchSource] = useState<'api_ninjas' | 'life_fitness' | ''>('')
   const [name, setName] = useState('')
   const [type, setType] = useState('')
   const [muscle, setMuscle] = useState('')
@@ -36,6 +40,8 @@ export function CoachExercisesPage() {
   const [success, setSuccess] = useState<string | null>(null)
   const [results, setResults] = useState<SearchResult[]>([])
   const [saveLibKey, setSaveLibKey] = useState<string | null>(null)
+  /** Avoid showing “No matches” before the first Search click. */
+  const [searchCompletedOk, setSearchCompletedOk] = useState(false)
 
   useEffect(() => {
     if (!menuOpen) return
@@ -47,8 +53,10 @@ export function CoachExercisesPage() {
   }, [menuOpen])
 
   const canSearch = useMemo(() => {
+    if (!searchSource) return false
+    if (searchSource === 'life_fitness') return true
     return !!(name.trim() || type.trim() || muscle.trim() || difficulty.trim() || equipment.trim())
-  }, [name, type, muscle, difficulty, equipment])
+  }, [searchSource, name, type, muscle, difficulty, equipment])
 
   async function saveExerciseToLibrary(r: SearchResult) {
     setError(null)
@@ -88,6 +96,7 @@ export function CoachExercisesPage() {
     setPending(true)
     try {
       const url = new URL('/api/coach/exercises/search', window.location.origin)
+      url.searchParams.set('source', searchSource === 'life_fitness' ? 'life_fitness' : 'api_ninjas')
       if (name.trim()) url.searchParams.set('name', name.trim())
       if (type.trim()) url.searchParams.set('type', type.trim())
       if (muscle.trim()) url.searchParams.set('muscle', muscle.trim())
@@ -99,18 +108,22 @@ export function CoachExercisesPage() {
       if (!res.ok || !json.ok) {
         setError((json as any).error ?? 'Search failed.')
         setResults([])
+        setSearchCompletedOk(false)
         return
       }
       setResults(json.results ?? [])
+      setSearchCompletedOk(true)
     } catch {
       setError('Network error.')
       setResults([])
+      setSearchCompletedOk(false)
     } finally {
       setPending(false)
     }
   }
 
   function clear() {
+    setSearchSource('')
     setName('')
     setType('')
     setMuscle('')
@@ -118,6 +131,7 @@ export function CoachExercisesPage() {
     setEquipment('')
     setResults([])
     setError(null)
+    setSearchCompletedOk(false)
   }
 
   async function logout() {
@@ -180,9 +194,9 @@ export function CoachExercisesPage() {
       </aside>
 
       <main className={styles.mainInner}>
-        <h1 className={styles.title}>Search exercises (API Ninjas)</h1>
+        <h1 className={styles.title}>Search exercises</h1>
         <p className={styles.muted}>
-          Use one or more filters. Results are limited to 20. To assign work to an athlete, use the{' '}
+          Pick a catalog, then use one or more filters. Results are limited to 20. To assign work to an athlete, use the{' '}
           <a className="font-semibold text-cyan-300 underline-offset-2 hover:underline" href="/coach/program">
             program builder
           </a>{' '}
@@ -195,26 +209,82 @@ export function CoachExercisesPage() {
         </p>
 
         <section className={styles.panel}>
+          <div className="mb-4 max-w-md">
+            <div className={styles.label}>Search catalog</div>
+            <select
+              className={styles.select}
+              value={searchSource}
+              onChange={(e) => {
+                const v = e.target.value as typeof searchSource
+                setSearchSource(v)
+                setResults([])
+                setError(null)
+                setSearchCompletedOk(false)
+              }}
+            >
+              <option value="">— Choose where to search —</option>
+              <option value="api_ninjas">API Ninjas (exercises)</option>
+              <option value="life_fitness">Life Fitness (machines catalog)</option>
+            </select>
+            <p className={`${styles.muted} mt-1 text-xs`}>
+              {searchSource === 'life_fitness'
+                ? 'Leave filters empty and click Search to list the full catalog, or narrow with any combination of fields.'
+                : searchSource === 'api_ninjas'
+                  ? 'Shared library matches by name first; API Ninjas fills the rest.'
+                  : 'Select a catalog before typing filters.'}
+            </p>
+          </div>
+
           <div className={styles.formGrid}>
             <div>
               <div className={styles.label}>Name</div>
-              <input className={styles.input} value={name} onChange={(e) => setName(e.target.value)} placeholder="e.g. squat" />
+              <input
+                className={styles.input}
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                placeholder={searchSource === 'life_fitness' ? 'e.g. Integrity, treadmill' : 'e.g. squat'}
+                disabled={!searchSource}
+              />
             </div>
             <div>
               <div className={styles.label}>Muscle</div>
-              <input className={styles.input} value={muscle} onChange={(e) => setMuscle(e.target.value)} placeholder="e.g. quadriceps" />
+              <input
+                className={styles.input}
+                value={muscle}
+                onChange={(e) => setMuscle(e.target.value)}
+                placeholder="e.g. quadriceps, glutes"
+                disabled={!searchSource}
+              />
             </div>
             <div>
               <div className={styles.label}>Type</div>
-              <input className={styles.input} value={type} onChange={(e) => setType(e.target.value)} placeholder="e.g. strength" />
+              <input
+                className={styles.input}
+                value={type}
+                onChange={(e) => setType(e.target.value)}
+                placeholder={searchSource === 'life_fitness' ? 'e.g. Cardio / Locomotion' : 'e.g. strength'}
+                disabled={!searchSource}
+              />
             </div>
             <div>
               <div className={styles.label}>Difficulty</div>
-              <input className={styles.input} value={difficulty} onChange={(e) => setDifficulty(e.target.value)} placeholder="beginner / intermediate / expert" />
+              <input
+                className={styles.input}
+                value={difficulty}
+                onChange={(e) => setDifficulty(e.target.value)}
+                placeholder="beginner / intermediate / …"
+                disabled={!searchSource}
+              />
             </div>
             <div>
               <div className={styles.label}>Equipment</div>
-              <input className={styles.input} value={equipment} onChange={(e) => setEquipment(e.target.value)} placeholder="e.g. barbell" />
+              <input
+                className={styles.input}
+                value={equipment}
+                onChange={(e) => setEquipment(e.target.value)}
+                placeholder={searchSource === 'life_fitness' ? 'e.g. Symbio, Integrity' : 'e.g. barbell'}
+                disabled={!searchSource}
+              />
             </div>
           </div>
 
@@ -248,10 +318,16 @@ export function CoachExercisesPage() {
                 </div>
               </div>
             ))}
-            {!pending && !error && canSearch && results.length === 0 ? (
+            {!pending && !error && searchCompletedOk && results.length === 0 ? (
               <div className={styles.card}>No matches.</div>
             ) : null}
-            {!canSearch ? <div className={styles.card}>Add a filter above to search.</div> : null}
+            {!searchSource ? (
+              <div className={styles.card}>Choose a catalog above, then search (API Ninjas needs at least one filter).</div>
+            ) : searchSource === 'api_ninjas' && !canSearch ? (
+              <div className={styles.card}>Add a filter above to search.</div>
+            ) : searchSource === 'life_fitness' && !searchCompletedOk ? (
+              <div className={styles.card}>Click Search to load the full catalog, or enter filters first to narrow.</div>
+            ) : null}
           </div>
         </section>
       </main>
