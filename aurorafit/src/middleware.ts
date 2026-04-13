@@ -5,13 +5,35 @@ import { Redis } from '@upstash/redis/cloudflare'
 import { memoryRateLimit } from '@/lib/ipRateLimitMemory'
 
 /**
- * Application-layer rate limiting for /api routes.
- *
- * This does not replace network-level DDoS protection (use your host, Cloudflare,
- * or a reverse proxy with limit_req). It limits abuse of your API and DB from
- * a single IP (login spam, scraping, accidental loops).
+ * Must match `COOKIE_NAME` in `src/lib/session.ts` (avoid importing session.ts here — it pulls Prisma into Edge).
  */
+const SESSION_COOKIE = 'af_session'
 
+const STATIC_PATH = /\.(ico|png|jpg|jpeg|svg|webp|gif|txt|xml|json|webmanifest|woff2?)$/i
+
+/**
+ * Paths that do not require an `af_session` cookie.
+ * - `/admin/*` uses client-side admin secret (see AdminShell), not the user session cookie.
+ */
+function pathAllowsWithoutSessionCookie(pathname: string): boolean {
+  if (pathname.startsWith('/_next')) return true
+  if (pathname === '/favicon.ico') return true
+  if (STATIC_PATH.test(pathname)) return true
+  if (
+    pathname === '/login' ||
+    pathname === '/register' ||
+    pathname === '/register/athlete' ||
+    pathname === '/register/coach'
+  ) {
+    return true
+  }
+  if (pathname.startsWith('/admin')) return true
+  return false
+}
+
+/**
+ * Application-layer rate limiting for /api routes.
+ */
 const API_PER_MINUTE = 120
 const AUTH_PER_MINUTE = 30
 
@@ -51,7 +73,7 @@ function getRedisLimiters(): Limiters | null {
   return redisLimiters
 }
 
-export async function middleware(request: NextRequest) {
+async function rateLimitApi(request: NextRequest): Promise<NextResponse> {
   const ip = clientIp(request)
   const path = request.nextUrl.pathname
   const isAuth = path.startsWith('/api/auth')
@@ -89,6 +111,32 @@ export async function middleware(request: NextRequest) {
   return NextResponse.next()
 }
 
+export async function middleware(request: NextRequest) {
+  const path = request.nextUrl.pathname
+
+  if (path.startsWith('/api')) {
+    return rateLimitApi(request)
+  }
+
+  if (pathAllowsWithoutSessionCookie(path)) {
+    return NextResponse.next()
+  }
+
+  const token = request.cookies.get(SESSION_COOKIE)?.value
+  if (!token?.trim()) {
+    const login = new URL('/login', request.url)
+    if (path !== '/') {
+      login.searchParams.set('next', path)
+    }
+    return NextResponse.redirect(login)
+  }
+
+  return NextResponse.next()
+}
+
 export const config = {
-  matcher: ['/api/:path*'],
+  matcher: [
+    '/api/:path*',
+    '/((?!_next/static|_next/image|favicon.ico).*)',
+  ],
 }
