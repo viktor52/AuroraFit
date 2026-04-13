@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* App is dark-themed; fixes native <select> popup / option colors in Chromium & Safari */
-html {
-  color-scheme: dark;
-}
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -29,66 +24,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
-
-/*
- * Native selects: component CSS modules often set bg-white/5 which reads as a light dropdown on Windows.
- * These rules target all <select> and override with slate surfaces + cyan accent to match AuroraFit UI.
- */
-select {
-  accent-color: rgb(34 211 238);
-}
-
-select:not([multiple]) {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background-color: rgb(15 23 42 / 0.94) !important;
-  color: rgb(241 245 249) !important;
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2367e8f9'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E") !important;
-  background-repeat: no-repeat !important;
-  background-position: right 0.75rem center !important;
-  background-size: 1.125rem !important;
-  padding-right: 2.5rem !important;
-  cursor: pointer;
-}
-
-select[multiple] {
-  background-color: rgb(15 23 42 / 0.94) !important;
-  color: rgb(241 245 249) !important;
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
-  background-image: none !important;
-  padding-right: 1rem !important;
-}
-
-select option,
-select optgroup {
-  background-color: rgb(15 23 42);
-  color: rgb(241 245 249);
-}
-
-select:focus-visible {
-  outline: none;
-  border-color: rgba(34, 211, 238, 0.5) !important;
-  box-shadow: 0 0 0 3px rgba(34, 211, 238, 0.18);
-}
-
-select:disabled {
-  opacity: 0.55;
-  cursor: not-allowed;
-}
-
-/* Admin shell uses amber focus elsewhere; amber-tinted select focus when inside admin layout */
-.adminShell select:focus-visible {
-  border-color: rgba(251 191 36 / 0.55) !important;
-  box-shadow: 0 0 0 3px rgba(251 191 36 / 0.2);
-}
-
-.adminShell select:not([multiple]) {
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23fcd34d'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E") !important;
-}
-
-.adminShell select {
-  accent-color: rgb(251 191 36);
 }

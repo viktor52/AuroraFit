@@ -40,8 +40,6 @@ export function CoachExercisesPage() {
   const [success, setSuccess] = useState<string | null>(null)
   const [results, setResults] = useState<SearchResult[]>([])
   const [saveLibKey, setSaveLibKey] = useState<string | null>(null)
-  /** Avoid showing “No matches” before the first Search click. */
-  const [searchCompletedOk, setSearchCompletedOk] = useState(false)
 
   useEffect(() => {
     if (!menuOpen) return
@@ -108,15 +106,12 @@ export function CoachExercisesPage() {
       if (!res.ok || !json.ok) {
         setError((json as any).error ?? 'Search failed.')
         setResults([])
-        setSearchCompletedOk(false)
         return
       }
       setResults(json.results ?? [])
-      setSearchCompletedOk(true)
     } catch {
       setError('Network error.')
       setResults([])
-      setSearchCompletedOk(false)
     } finally {
       setPending(false)
     }
@@ -131,7 +126,6 @@ export function CoachExercisesPage() {
     setEquipment('')
     setResults([])
     setError(null)
-    setSearchCompletedOk(false)
   }
 
   async function logout() {
@@ -219,7 +213,6 @@ export function CoachExercisesPage() {
                 setSearchSource(v)
                 setResults([])
                 setError(null)
-                setSearchCompletedOk(false)
               }}
             >
               <option value="">— Choose where to search —</option>
@@ -228,7 +221,7 @@ export function CoachExercisesPage() {
             </select>
             <p className={`${styles.muted} mt-1 text-xs`}>
               {searchSource === 'life_fitness'
-                ? 'Leave filters empty and click Search to list the full catalog, or narrow with any combination of fields.'
+                ? 'Search with empty filters to list the full catalog (up to 500). Add filters to narrow results.'
                 : searchSource === 'api_ninjas'
                   ? 'Shared library matches by name first; API Ninjas fills the rest.'
                   : 'Select a catalog before typing filters.'}
@@ -318,15 +311,13 @@ export function CoachExercisesPage() {
                 </div>
               </div>
             ))}
-            {!pending && !error && searchCompletedOk && results.length === 0 ? (
+            {!pending && !error && searchSource && canSearch && results.length === 0 ? (
               <div className={styles.card}>No matches.</div>
             ) : null}
             {!searchSource ? (
-              <div className={styles.card}>Choose a catalog above, then search (API Ninjas needs at least one filter).</div>
+              <div className={styles.card}>Choose a catalog above, then search (Life Fitness allows an empty query).</div>
             ) : searchSource === 'api_ninjas' && !canSearch ? (
               <div className={styles.card}>Add a filter above to search.</div>
-            ) : searchSource === 'life_fitness' && !searchCompletedOk ? (
-              <div className={styles.card}>Click Search to load the full catalog, or enter filters first to narrow.</div>
             ) : null}
           </div>
         </section>

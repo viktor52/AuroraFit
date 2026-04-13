@@ -1,25 +1,12 @@
 'use client'
 
 import Link from 'next/link'
-import { useRouter, useSearchParams } from 'next/navigation'
+import { useRouter } from 'next/navigation'
 import { useState } from 'react'
 import styles from './LoginPage.module.css'
 
-/** Same-origin path only — prevents open redirects after login. */
-function safeNextPath(raw: string | null): string | null {
-  if (!raw) return null
-  const pathOnly = raw.split('?')[0]?.split('#')[0] ?? ''
-  const t = pathOnly.trim()
-  if (!t.startsWith('/') || t.startsWith('//')) return null
-  if (t.includes('..')) return null
-  if (t.startsWith('/api')) return null
-  if (t === '/login' || t.startsWith('/login/')) return null
-  return t || null
-}
-
 export function LoginPage() {
   const router = useRouter()
-  const searchParams = useSearchParams()
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState<string | null>(null)
@@ -38,12 +25,6 @@ export function LoginPage() {
       const data = (await res.json().catch(() => ({}))) as { ok?: boolean; role?: string; error?: string }
       if (!res.ok || !data.ok) {
         setError(data.error ?? 'Login failed.')
-        return
-      }
-
-      const next = safeNextPath(searchParams.get('next'))
-      if (next) {
-        router.push(next)
         return
       }
 

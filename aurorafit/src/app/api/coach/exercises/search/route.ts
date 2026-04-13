@@ -20,21 +20,19 @@ export async function GET(req: Request) {
 
   if (source === 'life_fitness') {
     const parts = [name, type, muscle, difficulty, equipment].filter((p) => p.length > 0)
-
-    const rows =
-      parts.length === 0
-        ? await prisma.lifeFitnessMachine.findMany({
-            orderBy: { name: 'asc' },
-          })
-        : await prisma.lifeFitnessMachine.findMany({
-            where: {
+    const rows = await prisma.lifeFitnessMachine.findMany({
+      where:
+        parts.length === 0
+          ? undefined
+          : {
               AND: parts.map((p) => ({
                 searchText: { contains: p, mode: 'insensitive' as const },
               })),
             },
-            take: 200,
-            orderBy: { name: 'asc' },
-          })
+      orderBy: { name: 'asc' },
+      // Empty query = full catalog (capped). With filters, keep results bounded.
+      take: parts.length === 0 ? 500 : 100,
+    })
 
     const results = rows.map((row) => ({
       name: row.name,

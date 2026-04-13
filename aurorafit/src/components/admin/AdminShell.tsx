@@ -43,7 +43,7 @@ export function AdminShell({
 
   if (!secret) {
     return (
-      <div className={`${styles.page} adminShell`}>
+      <div className={styles.page}>
         <main className={styles.mainInner}>
           <p className={styles.muted}>Loading…</p>
         </main>
@@ -52,7 +52,7 @@ export function AdminShell({
   }
 
   return (
-    <div className={`${styles.page} ${styles.layout} adminShell`}>
+    <div className={`${styles.page} ${styles.layout}`}>
       <header className={styles.topbar}>
         <div className={styles.topbarInner}>
           <div className={styles.brand}>

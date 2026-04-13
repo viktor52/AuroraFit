@@ -2,8 +2,9 @@ import 'dotenv/config'
 import { defineConfig } from 'prisma/config'
 
 /**
- * Prisma CLI (`migrate deploy`, etc.). Prefer Neon `DIRECT_URL` when set (non-pooler);
- * otherwise `DATABASE_URL` (local Docker or pooled Neon).
+ * Prisma CLI (migrate, db push) connection.
+ * - Neon: set DIRECT_URL to the non-pooler "direct" host; keep DATABASE_URL as the pooled URL for the app (see src/lib/db.ts).
+ * - Local Docker: only DATABASE_URL is required (DIRECT_URL optional).
  */
 function prismaCliUrl(): string {
   const url = process.env.DIRECT_URL ?? process.env.DATABASE_URL

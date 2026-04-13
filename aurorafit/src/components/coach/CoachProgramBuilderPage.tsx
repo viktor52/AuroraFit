@@ -1257,10 +1257,10 @@ export function CoachProgramBuilderPage() {
           <h2 className="text-lg font-semibold text-slate-100">Search exercises</h2>
           <p className={styles.muted}>
             {searchSource === 'life_fitness'
-              ? 'Life Fitness catalog: Search with empty filters for the full list, or narrow with fields. '
+              ? 'Life Fitness machine catalog — empty search lists the full catalog. '
               : searchSource === 'api_ninjas'
                 ? 'Library matches appear first; API Ninjas fills the rest. '
-                : 'Choose a catalog, then add filters (API Ninjas needs at least one). '}
+                : 'Choose a catalog, then add filters (or search empty for full Life Fitness list). '}
             Adds to week {activeProgramWeek}, day {activeSlot + 1}.
             {athleteEditMode || libraryEditMode
               ? ' You can use “Copy this day to later weeks” on a day card to duplicate that day forward.'
