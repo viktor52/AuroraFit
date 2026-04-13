@@ -1,0 +1,5 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "cd aurorafit && npm ci",
+  "buildCommand": "cd aurorafit && npm run vercel-build"
+}
