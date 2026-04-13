@@ -18,6 +18,7 @@ const STATIC_PATH = /\.(ico|png|jpg|jpeg|svg|webp|gif|txt|xml|json|webmanifest|w
 function pathAllowsWithoutSessionCookie(pathname: string): boolean {
   if (pathname.startsWith('/_next')) return true
   if (pathname === '/favicon.ico') return true
+  if (pathname === '/sw.js') return true
   if (STATIC_PATH.test(pathname)) return true
   if (
     pathname === '/login' ||
